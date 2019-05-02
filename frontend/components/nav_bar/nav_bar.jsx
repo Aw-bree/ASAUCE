@@ -2,25 +2,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import EcomBar from './ecom_bar';
 import Toolbar from './toolbar';
+import CategoryBar from './category_bar';
 
 export default ({ currentUser, logout }) => {
   const display = currentUser ? (
-    <div>
+    <section className="auth-buttons">
+      <p>`Hello {currentUser.first_name}`</p>
       <button onClick={logout}>Log Out!</button>
-    </div>
+    </section>
   ) : (
-      <div>
-        <Link className="btn" to="/signup">Sign Up</Link>
-        <Link className="btn" to="/login">Log In</Link>
-      </div>
+      <section className="auth-buttons">
+        <Link to="/signup">Sign Up</Link>
+        <Link to="/login">Log In</Link>
+      </section>
     );
 
   return (
-    <div class-name="nav-bar">
+    <section className="nav-bar">
       <EcomBar />
       <Toolbar />
       {display}
-      {/* <Banner /> */}
-    </div>
+      <CategoryBar />
+    </section>
   );
 };
