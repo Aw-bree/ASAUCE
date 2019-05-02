@@ -50,14 +50,12 @@ group :development do
   gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'annotate'
-  gem 'bcrypt'
-  gem 'jquery-rails'
 end
 
-group :production do
-  gem 'jquery-rails'
-  gem 'bcrypt'
-end
+
+gem 'jquery-rails'
+gem 'bcrypt'
+
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
