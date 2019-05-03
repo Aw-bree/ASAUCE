@@ -8,7 +8,7 @@ import CategoryCarousel from './category-carousel';
 
 
 export default () => (
-  <div className="Home">
+  <div className="home">
     <HomeBanner />
     <HomeFeature />
     <StyleFeedCarousel />

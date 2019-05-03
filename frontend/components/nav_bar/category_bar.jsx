@@ -10,7 +10,7 @@ export default () => (
       <li>Activewear</li>
       <li>Face + Body</li>
       <li>Brands</li>
-      <li className="category-bar--feature">Outlet</li>
+      <li className="category-bar--feature"><p>Outlet</p></li>
       <li>Marketplace</li>
       <li>Inspiration</li>
     </ul>

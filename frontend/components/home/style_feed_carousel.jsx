@@ -2,9 +2,7 @@ import React from 'react';
 
 export default () => (
   <div className="style-feed" >
-    <a href="https://www.w3schools.com">
-      <h2>STYLE FEED</h2>
-    </a>
+    <h2>STYLE FEED</h2>
     <p>Outfit ideas, editor picks, styling inspiration and Face + Body tips</p>
 
     <section className="style-feed-carousel">
@@ -57,7 +55,7 @@ export default () => (
             </div>
           </a>
         </li>
-
+{/* 
         <li className="FeedItem">
           <a href="">
             <img alt="" src="https://66.media.tumblr.com/4e197393dee3aa418c7c4a25c8fb2ce3/tumblr_pqt6uwiL6G1wyb2l8o9_400.jpg"></img>
@@ -111,18 +109,7 @@ export default () => (
               <p>April 18, 2019</p>  
             </div>
           </a>
-        </li>
-
-        <li className="FeedItem">
-          <a href="https://www.w3schools.com">
-            <img alt="" src=""></img>
-              <div className="style-feed-carousel-content">
-              <h3>Lorem Ipsum</h3>
-              <p>details details</p>
-              <p>April 25, 2019</p>  
-            </div>
-          </a>
-        </li>
+        </li> */}
 
         <li className="FeedItem viewAllArticles">
           <a href="">

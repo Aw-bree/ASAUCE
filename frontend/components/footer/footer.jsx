@@ -4,7 +4,7 @@ import FooterNavLinks from './footer_nav_links';
 import EcomFooter from './ecom_footer';
 
 export default () => (
-  <div className="Footer">
+  <div className="footer">
     <FooterIcons />
     <FooterNavLinks />
     <EcomFooter />

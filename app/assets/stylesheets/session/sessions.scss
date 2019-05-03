@@ -1,3 +1,200 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body, #root, #app {
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.session {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+  align-items: center;
+  padding-bottom: 10%;
+
+  a, p {
+    text-decoration: none;
+    font-family: "futura-pt",Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px;
+    // display: block;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.header img {
+  width: 95px;
+  height: 28px;
+  background: #eee;
+  margin: 25px;
+}
+
+.session-form {
+  margin: auto;
+  margin-top: 0px;
+  display: flex;  
+  flex-direction: column;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+  text-align: center;
+  align-items: center;
+  min-width: 650px;
+}
+
+.register-info {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 10px;
+}
+
+.register-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+
+  p, a {
+    width: 100%;
+    border-style: border-box;
+    padding: 20px;
+  }
+}
+
+.selected-register-option-right {
+  border: 1px solid #999;
+  border-bottom: none;
+  margin-right: 15px;
+}
+
+.selected-register-option-left {
+  border: 1px solid #999;
+  border-bottom: none;
+  margin-left: 15px;
+}
+
+.not-selected-register-option {
+  border-bottom: 1px solid #999;
+  margin-left: 15px;
+}
+
+.not-selected-register-option-right {
+   border-bottom: 1px solid #999;
+    margin-right: 15px;
+}
+
+.session-form main {
+  display: flex;
+  flex-direction: column;
+}
+
+.session-form main form {
+  min-width: 550px;
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: "futura-pt",Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #999;
+    font-size: 14px;
+    line-height: 1.7;
+    width: 60%;
+    min-width: 20%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  fieldset label{
+    width: 70%;
+  }
+
+  .date-of-birth, .gender, .contact-preferences {
+    display: block;
+    border: none;
+
+
+  legend {
+      text-align: left;
+      font-family: "futura-pt",Tahoma,Geneva,Verdana,Arial,sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #999;
+      font-size: 14px;
+      line-height: 1.7;
+      margin-left: 18%;
+    }
+  }
+
+  input {
+    display: flex;
+    height: 45px;
+    font-family: "futura-pt",Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .4px;
+    border: 1px solid #999;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color:black;
+  }
+
+  input[type="password"] {
+    letter-spacing: 8px;
+  }
+
+
+  button {
+    width: 45%;
+    border-radius: 0;
+    background: #2d2d2d;
+    color: #fff;
+    border: 0;
+    height: 36px;
+    min-width: 200px;
+  }
+}
+
+.signin-form input {
+    width: 70%;
+    align-items: left;
+}
+
+#password {
+    font-family: "futura-pt",Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    text-decoration: none;
+}
+
+
+
+
+
