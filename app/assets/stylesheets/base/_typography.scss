@@ -1,37 +1,30 @@
 
-// text
-$text-font-stack: futura-pt,FuturaStd,Helvetica,Arial,sans-serif;
-$text-font-stack-2: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+// title
+@mixin text-title-xlarge {
+  font-size: $ft-sz-7;
+  line-height: 36px;
+  font-weight: $weight-2;
+  letter-spacing: 1.2px;
+}
 
-// colors
-$spring: #EA92B2;
+@mixin text-title-medium {
+  font-size: $ft-sz-2;
+  font-weight: $weight-2;
+  font-weight: $weight-3;
+  font-size: $ft-sz-5;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+}
 
-$grey-4: #2d2d2d;
-$grey-3: #525050;
-$grey-2:  #666666;
-$grey-1: #999;
+@mixin text-title-small {
+  font-size: $ft-sz-2;
+  font-weight: $weight-2;
+  letter-spacing: 2px;
+}
 
-$white-4: #ddd;
-$white-3: #DDDDDD;
-$white-2: #eee;
-$white-1: #fff;
-
-// font-size
-$ft-sz-1: 11px;
-$ft-sz-2: 14px;
-$ft-sz-3: 1rem;
-$ft-sz-4: 16px;
-$ft-sz-5: 17px;
-$ft-sz-6: 28px;
-$ft-sz-7: 50px;
-
-//font-weights
-$weight-1: bold;
-$weight-2: bolder;
-$weight-3: 700;
-
-//letter-spacing
-$letter-spacing-1: .4px;
-$letter-spacing-2: 1.4px;
-$letter-spacing-3: 2px;
-$letter-spacing-4: 4px;
+// body
+@mixin text-body {
+  font-size: $ft-sz-1;
+  font-weight: none;
+}

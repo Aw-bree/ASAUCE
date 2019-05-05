@@ -1,40 +1,38 @@
 import React from 'react';
 
 export default () => (
-  <div className="footer-nav-links" >
-    <ul className="col">
-        <li><h4>HELP AND INFORMATION</h4></li>
-        <li>Help</li>
-        <li>Track Order</li>
-        <li>Delivery & Returns</li>
-        <li>Premier Delivery</li>
-        <li>10% Student Discount</li>
+  <section className="footer--nav-links" >
+    <ul className="footer--nav-links--col">
+      <h4 className="footer--nav-links--title">HELP AND INFORMATION</h4>
+      <li className="footer--nav-links--item">Help</li>
+        <li className="footer--nav-links--item">Track Order</li>
+        <li className="footer--nav-links--item">Delivery & Returns</li>
+        <li className="footer--nav-links--item">Premier Delivery</li>
+        <li className="footer--nav-links--item">10% Student Discount</li>
       </ul>
 
-    <ul className="col">
-        <li ><h4>ABOUT ASOS</h4></li>
-        <li>About Us</li>
-        <li>Careers at ASOS</li>
-        <li>Corporate Responsibility</li>
-        <li>Investors Site</li>
+    <ul className="footer--nav-links--col">
+      <h4 className="footer--nav-links--title">ABOUT ASOS</h4>
+        <li className="footer--nav-links--item">About Us</li>
+        <li className="footer--nav-links--item">Careers at ASOS</li>
+        <li className="footer--nav-links--item">Corporate Responsibility</li>
+        <li className="footer--nav-links--item">Investors Site</li>
       </ul>
 
-      <ul className="col">
-        <li><h4>MORE FROM ASOS</h4></li>
-        <li>E-gift cards</li>
-        <li>Mobile and ASOS Apps</li>
-        <li>ASOS Marketplace</li>
+    <ul className="footer--nav-links--col">
+      <h4 className="footer--nav-links--title">MORE FROM ASOS</h4>
+        <li className="footer--nav-links--item">E-gift cards</li>
+        <li className="footer--nav-links--item">Mobile and ASOS Apps</li>
+        <li className="footer--nav-links--item">ASOS Marketplace</li>
       </ul>
 
-      <ul class="col">
-        <li><h4>SHOPPING FROM:</h4></li>
-        <li>
-          <ul className="shopping-from">
-            <span className="shipping-country">You're in</span>
-            <img alt="United States" src="https://assets.asosservices.com/storesa/images/flags/us.png" alt="United States"></img>
-            <span>| CHANGE</span>
-          </ul>
+    <ul className="footer--nav-links--col">
+      <h4 className="footer--nav-links--title">SHOPPING FROM:</h4>
+        <li className="footer--nav-links--shipping">
+        <span className="footer--nav-links--shipping-country">You're in</span>
+          <img className="shipping-icon" alt="United States" src="https://assets.asosservices.com/storesa/images/flags/us.png" alt="United States"></img>
+        <span className="footer--nav-links--shipping-change">| CHANGE</span>
         </li>
       </ul>
-  </div>
+  </section>
 );

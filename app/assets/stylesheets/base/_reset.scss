@@ -1,0 +1,39 @@
+html, body, section, article,
+h1, h2, p, strong, em, a, input,
+button {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+  list-style-type: none;
+  font-family: $text-font-stack;
+}
+
+html, body, #root, #app {
+  height: 100%;
+}
+
+div:focus {
+  display: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+// img {
+// 	// display: block;
+// 	// border: 0;
+// 	// width: 100%;
+// 	// height: auto;
+// }

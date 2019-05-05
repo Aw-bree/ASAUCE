@@ -1,0 +1,94 @@
+.footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footer--icon-bar {
+  @include row-center;
+  height: 30px;
+}
+
+.footer--icon-bar--social {
+  @include row-center;
+  @include flex-item-perf-center;
+  border-right: 1px solid #999;
+}
+
+.footer--icon-bar--payment {
+  @include row-center;
+  @include flex-item-perf-center;
+}
+
+.footer--nav-links {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  height: 240px;
+  background: $white-3;
+}
+
+// .footer--nav-links--col {
+// }
+
+.footer--nav-links--title {
+  @include text-title-small;
+  margin-bottom: 0px;
+  color: $grey-2;
+}
+
+.footer--nav-links--item {
+  @include text-body;
+  list-style-position:inside;
+  padding: 8px;
+  color: $grey-2;
+}
+
+.footer--nav-links--shipping {
+  @include row-center;
+}
+
+.footer--nav-links--shipping-country {
+  list-style-position:inside;
+  padding: 0px 19px;
+  color: $grey-2;
+  font-size: $ft-sz-2;
+}
+
+.footer--nav-links--shipping-change {
+  @include text-title-small;
+  color: $grey-2;
+}
+
+.shipping-icon {
+  @include shipping-icon;
+}
+
+.footer--ecom {
+  @include row-between;
+  height: 50px;
+  background:$white-4;
+}
+
+.footer--ecom-copy {
+  @include row-center;
+  font-size: $ft-sz-1;
+  letter-spacing: $letter-spacing-1;
+  color: $grey-2;
+  margin-left: 3%;
+}
+
+.footer--ecom--terms {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.footer--ecom--terms-item {
+  @include row-center;
+  border-left: 1px solid $grey-4;
+  padding: 0px 19px;
+  list-style-position: inside;
+  color: $grey-2;
+  font-size: $ft-sz-1;
+}
+

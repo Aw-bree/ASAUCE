@@ -2,36 +2,43 @@
 // - direction-justification-alignment
 @mixin row-right-center {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
 
 @mixin row-left-center {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
 
 @mixin row-center {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 @mixin row-around {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
 @mixin row-between {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
 @mixin row-left-top {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
 }
@@ -41,6 +48,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+@mixin col-top-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
 }
 
 @mixin col-center-center {
@@ -53,6 +68,45 @@
 
 // For list items in flex container
 @mixin flex-item-perf-center {
+  height: inherit;
   margin: auto;
 } 
 
+
+
+// percent of page 
+@mixin col-one-third {
+  width: (100% / 3);
+  width: calc(100% / 3);
+}
+
+@mixin col-one-sixth {
+  width: (100% / 6);
+  width: calc(100% / 6);
+}
+
+@mixin col-two-thirds {
+  width: (100% / 1.4);
+  width: calc(100% / 1.4);
+}
+
+// icons 
+
+.payment-icon {
+  width: 30px;
+  height: auto;
+  padding: 0px 17px;
+}
+
+.social-icon {
+  width: 30px;
+  height: auto;
+  padding: 0px 17px;
+}
+
+@mixin shipping-icon {
+  width: 18px;
+  height: 18px;
+  padding: 0px 17px;
+}
+  

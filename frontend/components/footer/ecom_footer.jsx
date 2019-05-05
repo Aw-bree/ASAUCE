@@ -1,12 +1,12 @@
 import React from 'react';
 
 export default () => (
-  <div className="ecom-footer" >
-    <p>© 2019 ASOS</p>
-    <ul>
-      <li>Privacy & Cookies</li>
-      <li>Ts&Cs</li>
-      <li>Accessibility</li>
+  <section className="footer--ecom" >
+    <p className="footer--ecom-copy">© 2019 ASOS</p>
+    <ul className="footer--ecom--terms">
+      <li className="footer--ecom--terms-item">Privacy & Cookies</li>
+      <li className="footer--ecom--terms-item">Ts&Cs</li>
+      <li className="footer--ecom--terms-item">Accessibility</li>
     </ul>
-  </div>
+  </section>
 );
