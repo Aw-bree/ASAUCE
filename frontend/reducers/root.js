@@ -4,7 +4,7 @@ import entitiesReducer from './entities';
 import errorsReducer from './errors';
 
 export default combineReducers({
-  // entities: entitiesReducer,
+  entities: entitiesReducer,
   session: sessionReducer,
   errors: errorsReducer
 });

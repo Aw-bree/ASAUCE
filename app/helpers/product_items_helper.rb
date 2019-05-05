@@ -1,0 +1,2 @@
+module ProductItemsHelper
+end

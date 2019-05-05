@@ -8,4 +8,36 @@
 
 @import './session/sessions';
 
-@import './footer/footer'
+@import './footer/footer';
+
+// sass order source: https://gist.github.com/HugoGiraudel/8615243
+// Sass utilities
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// Vendors and external stylesheets
+// @import "vendors/bootstrap";
+// @import "vendors/jquery-ui";
+
+// Base stuff
+@import "base/reset";
+@import "base/typography";
+
+// Layout related stylesheets
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+
+// Components and modules
+@import "components/carousel";
+@import "components/buttons";
+@import "components/dropdown";
+
+// Page-specific stylesheets
+@import "pages/home";
+@import "pages/contact";
+
+// Themes 
+// @import "themes/theme";
+// @import "themes/admin";

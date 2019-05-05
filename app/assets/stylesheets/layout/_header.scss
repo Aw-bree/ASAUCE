@@ -1,0 +1,44 @@
+// global
+// list-style-type: none;
+// font-family
+
+.ecom-bar {
+  @include row-right-center;
+  height: 30px;
+}
+
+.ecom--list {
+  @include row-left-center;
+}
+
+.ecom-list--item {
+  padding: 0px 20px;
+  border-left: 1px solid $grey-4;
+  color: $grey-2;
+  font-size: $ft-sz-2;
+}
+
+.ecom-list-img {
+  width: 18px;
+  height: 18px;
+  padding: 0px 17px;
+}
+
+.toolbar {
+  @include row-center;
+  height: 60px;
+  background-color: $grey-4;
+}
+
+.toolbar--profile-icons {
+
+}
+
+.toolbar--business {
+  
+}
+
+.toolbar--search-bar {
+  
+}
+

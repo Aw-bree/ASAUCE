@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-// import chirpsReducer from './chirps';
+import productsReducer from './products';
+import productItemsReducer from './product_items';
 
 export default combineReducers({
-  // chirps: chirpsReducer
+  products: productsReducer,
+  productItems: productItemsReducer
 });

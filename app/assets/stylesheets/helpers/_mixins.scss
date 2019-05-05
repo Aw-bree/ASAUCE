@@ -1,0 +1,58 @@
+// For single rows:
+// - direction-justification-alignment
+@mixin row-right-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin row-left-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin row-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin row-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin row-left-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+@mixin col-top-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@mixin col-center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// For list items in flex container
+@mixin flex-item-perf-center {
+  margin: auto;
+} 
+

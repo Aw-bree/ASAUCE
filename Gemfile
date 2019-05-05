@@ -55,6 +55,7 @@ end
 
 gem 'jquery-rails'
 gem 'bcrypt'
+gem 'aws-sdk-s3'
 
 
 group :test do
