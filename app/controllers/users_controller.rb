@@ -8,8 +8,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      create_order!(@user)
       login!(@user)
-      redirect_to root_url
     else
       #$ custom message here
       flash.now[:errors] = @user.errors.full_messages

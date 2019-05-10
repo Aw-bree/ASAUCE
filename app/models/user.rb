@@ -26,6 +26,9 @@ class User < ApplicationRecord
   validates :gender, :inclusion=> { :in => @gender }
   validates :country, :inclusion=> { :in => @countries }
 
+  has_many :orders
+  has_many :order_items, through: :orders
+
   after_initialize :ensure_session_token
 
   attr_reader :password
@@ -54,5 +57,9 @@ class User < ApplicationRecord
     self.session_token = SecureRandom.urlsafe_base64
     self.save
     self.session_token
+  end
+
+  def current_order
+    Order.select("MAX(id) AS id").where(:user_id => self.id)
   end
 end

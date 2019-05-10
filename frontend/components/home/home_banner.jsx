@@ -3,12 +3,12 @@ import React from 'react';
 export default () => (
   <div className="home--banner" >
     <div className="home--banner-bar">
-      <p className="home--banner-bar-item">WOMEN</p>
+      <p className="home--banner-bar--item">WOMEN</p>
       <span className="home--banner-bar-item">
         <b className="home--banner-bar-item"><strong>SPEND MORE. SAVE MORE.</strong></b>
         <b className="home--banner-bar-item"><strong>$200 get $50, $250 get $70, $350 get $100.</strong></b>
       </span>
-      <p className="home--banner-bar-item">MEN</p>
+      <p className="home--banner-bar--item">MEN</p>
     </div>
 
 

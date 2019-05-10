@@ -11,7 +11,7 @@ const mapStateToProps = ({ entities }) => {
 
 const mapDispatchToProps = dispatch => {
   return { 
-    requestProducts: () => dispatch(requestProducts())
+    requestProducts: () => dispatch(requestProducts()),
   }
 }
 

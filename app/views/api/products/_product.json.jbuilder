@@ -1,1 +1,12 @@
-json.extract! product, :id, :title, :price
+json.extract! product,
+  :id,
+  :title,
+  :model_size,
+  :model_height,
+  :fabric_stretch,
+  :fabric_material,
+  :main_fiber_content,
+  :care_advice,
+  :care_instructions,
+  :price,
+  :markdown

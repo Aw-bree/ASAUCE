@@ -20,7 +20,7 @@ class Login extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.login(this.state)
+    this.props.login({email: 'demo@gmail.com', password: 'password'})
       .then(() => this.props.history.push('/'));
   }
 
@@ -74,10 +74,10 @@ class Login extends React.Component {
                 
                 {this.renderErrors()}
                 
-                <button className="auth--button" onClick={this.handleSubmit}>Sign In</button>
+                <button className="auth--button" onClick={this.handleSubmit}>Demo</button>
               </form>
               
-              <p className="auth--form-password-helper">Forgot password?</p>
+              {/* <p className="auth--form-password-helper">Forgot password?</p> */}
             </main>
           </section>
         </ul>  

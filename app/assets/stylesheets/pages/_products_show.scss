@@ -1,0 +1,200 @@
+
+.product-show {
+  border-bottom: 1px solid $white-4;
+}
+
+// layout
+
+.product-show--wrapper {
+  @include row-center;
+}
+
+.product-show--photos-wrapper {
+  @include row-center;
+  align-items: flex-start;
+}
+
+.product-show--photos-aside-wrapper {
+  margin: 35px;
+}
+
+.product--show--cart-aside-wrapper {
+  @include row-center;
+  align-items: flex-start;
+  width: 33%;
+}
+
+.product-show--detail-wrapper,
+.product-show--deatil-wrapper {
+  @include row-center;
+  width: 100%;
+}
+
+.product-show--deatil--items {
+  @include row-around;
+  width: 80%;
+  align-items: flex-start;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.product-show--detail--item {
+  text-align: left;
+  margin: 0px;
+
+  ul, li, p, h3 {
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+  }
+}
+
+
+
+// photos
+.product-show--aside--photos {
+  list-style-type: none;
+}
+
+.listings--product--show--img {
+  width: 100%;
+  max-width: 65px;
+  margin: 15px;
+}
+
+// cart aside
+
+.product-show--cart-aside {
+  width: 90%;
+  text-align: left;
+}
+
+.product-show--cart-aside-items--title {
+  width: 70%;
+  line-height: 30px;
+  @include text-title-medium;
+  font: $text-font-stack;
+  font-weight: normal;
+  font-size: 22px;
+  word-wrap: break-word;
+  color: $grey-3;
+  letter-spacing: $letter-spacing-2;
+  text-transform: none;
+}
+
+.product-show--cart-aside-items--price-wrapper,
+  .product-show--cart-aside-items--color-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0px;
+}
+
+.product-show--cart-aside-items--price {
+  @include text-title-large;
+  padding-right: 15px;
+  color: $grey-4;
+}
+
+.product-show--cart-aside-items--shipping {
+  line-height: 36px;
+  text-decoration-line: underline;
+  color: $grey-3
+}
+
+.product-show--cart-aside-items--color-title {
+  @include text-title-small;
+  padding-right: 15px;
+  margin-top: 30px;
+  letter-spacing: $letter-spacing-3;
+  text-transform: uppercase;
+}
+
+.product-show--cart-aside-items--color {
+  margin-top: 30px;
+  color: $grey-4;
+}
+
+.product-show--cart-aside--form {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.product-show--detail--item {
+  p, li {
+    padding: 5px;
+    color: $grey-4;
+  }
+}
+
+.product-show--detail--item--title {
+  @include text-title-medium;
+  color: $grey-2;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+// source: https://codepen.io/wallaceerick/pen/ctsCz
+.product-show--cart-aside--form--sizing {
+  cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    width: 220px;
+    height: 40px;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 11px system-ui;
+    border-radius: none;
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    color: black;
+        background-color: rgb(248, 248, 248);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(166, 166, 166);
+    border-image: initial;
+        overflow: visible !important;
+}
+    
+.product-show--cart-aside--form--add-to-cart {
+  width: 100%;
+    float: left;
+    background-color: #00AA5B;
+    display: table;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    height: 40px;
+    text-transform: uppercase;
+    padding-top: 1px;
+    margin-top: 28px;
+}
+
+.product-show--cart-aside--form--add-to-cart:hover {
+  background-color:  #00802b;
+}
+
+.product-show--cart-aside--form--add-to-cart:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+

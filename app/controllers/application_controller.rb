@@ -30,4 +30,9 @@ class ApplicationController < ActionController::Base
       redirect_to root_url
     end
   end
+
+  def create_order!(user_id)
+    Order.create({user_id: user_id})
+    nil
+  end
 end

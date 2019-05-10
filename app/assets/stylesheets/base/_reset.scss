@@ -13,9 +13,10 @@ button {
   background: transparent;
   list-style-type: none;
   font-family: $text-font-stack;
+  max-width: 100%;
 }
 
-html, body, #root, #app {
+html, body, #root, #app, #main {
   height: 100%;
 }
 

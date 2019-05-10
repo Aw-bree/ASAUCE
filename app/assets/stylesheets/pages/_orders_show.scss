@@ -1,0 +1,147 @@
+// Place all the styles related to the Orders controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.order {
+  height: 100%;
+}
+
+.order--container ul, li, h3, section { 
+  // border: 1px solid red;
+}
+
+.order--container {
+  background-color: #eee;
+  min-height: 390px;
+  min-width: 800px;
+  width: 100%;
+  height: 100%;
+  color: #2d2d2d;
+  padding: 0px;
+  @include col-top-center;
+}
+
+.order--wrapper {
+  width: 100%;
+  height: 100%;
+  @include col-top-center;
+  padding: 0px
+}
+
+.order--main {
+  list-style: none;
+  padding: 0px;
+  width: 50%;
+  @include col-top-center;
+  margin-top: 8px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0.10);
+}
+
+.order--listings--wrapper {
+  width: 90%;
+}
+
+.order--listings--header {
+  text-align: left;
+  align-items: left;
+  padding: 0px;
+  margin: 20px 10px;
+  @include text-title-medium;
+  font-size: 1.15em;
+  font-style: normal;
+  letter-spacing: 2.5px;
+  line-height: 2em;
+  font-family: futura-pt-n7,futura-pt,"Futura PT","Futura Book",Tahoma,Geneva,Verdana,Arial,sans-serif;
+}
+
+.order--listings {
+  padding: 0px;
+  margin: 0px 10px;
+  border-top: 1px solid #eee;
+}
+
+.order--listings--subtotal {
+  text-align: right;
+  @include row-left-top;
+}
+
+.order--listings--subtotal--price {
+  margin-left: 44px;
+}
+
+.listing--item--wrapper {
+  padding: 0px;
+  @include row-left-top;
+  justify-content: flex-start;
+}
+
+.listing--item--photos {
+  @include col-top-left;
+  margin: 20px;
+  width: 110px;
+  height: 140px;
+}
+
+.listing--item--img {
+  width: 110px;
+  height: 140px;
+}
+
+.listing--details--wrapper {
+  width: 60%;
+  margin: 20px;
+}
+
+.listing--details {
+  padding: 0px
+}
+
+.listing--details--header {
+  text-align: left;
+  padding: 0px;
+  color: #2d2d2d;
+  font-family: futura-pt-n7,futura-pt,"Futura PT","Futura Book",Tahoma,Geneva,Verdana,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: .85em;
+  padding-right: .3em;
+}
+
+.listing--details--brand {
+  text-align: left;
+  padding: 0px;
+}
+
+.listing--title {
+  text-align: left;
+  padding: 0px;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listing--details--specs--wrapper {
+  text-align: left;
+  padding: 0px;
+  list-style: none;
+  @include row-left-center;
+  justify-content: flex-start;
+}
+
+.listing--details--specs--color {
+}
+
+.listing--details--specs--size,
+.listing--details--specs--qty {
+
+}
+
+
+.listing--remove--btn {
+  margin: 20px 10px;
+  padding: 0px;
+}
+
+

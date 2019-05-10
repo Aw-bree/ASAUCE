@@ -5,6 +5,8 @@ import { logout } from '../../actions/session';
 
 const mapStateToProps = state => ({
   currentUser: state.session.currentUser,
+  orders: state.entities.orders,
+  orderItems: state.entities.orderItems
 });
 
 const mapDispatchToProps = dispatch => ({

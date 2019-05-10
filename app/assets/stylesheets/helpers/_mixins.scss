@@ -72,8 +72,6 @@
   margin: auto;
 } 
 
-
-
 // percent of page 
 @mixin col-one-third {
   width: (100% / 3);
@@ -109,4 +107,7 @@
   height: 18px;
   padding: 0px 17px;
 }
-  
+
+
+// currency 
+// https://stackoverflow.com/questions/9372624/formatting-a-number-as-currency-using-css

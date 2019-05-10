@@ -1,16 +1,16 @@
-import * as productAPIUtil from '../utils/product';
+import * as productAPIUtil from '../utils/product_util';
 export const RECEIVE_PRODUCTS = 'RECEIVE_PRODUCTS';
 export const RECEIVE_PRODUCT = 'RECEIVE_PRODUCT';
 
 
-const receiveAllProducts = (products) => ({
+export const receiveAllProducts = (products) => ({
   type: RECEIVE_PRODUCTS,
   products
 });
 
-const receiveProduct = (product) => ({
+export const receiveProduct = (payload) => ({
   type: RECEIVE_PRODUCT,
-  product
+  payload
 });
 
 export const requestProducts = () => dispatch => (
@@ -18,8 +18,10 @@ export const requestProducts = () => dispatch => (
     .then(products => dispatch(receiveAllProducts(products)))
 );
 
-export const requestProduct = (id) => dispatch (
-  productAPIUtil.fetchProduct(id)
-    .then(product => dispatch(receiveProduct(product)))
+export const requestProduct = (id) => dispatch => (
+  productAPIUtil.fetchProduct(id).then(product => {
+    dispatch(receiveProduct(product))
+    return product;
+  })
 );
 

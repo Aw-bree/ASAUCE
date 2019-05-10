@@ -5,8 +5,8 @@ export default () => (
     <h2 className="home--category-carousel--title">SHOP BY CATEGORY</h2>
 
     <section className="home--carousel-controls">
-      <button className="home--prev-btn"></button>
-      <button className="home--next-btn"></button>
+      <button className="prev-btn"></button>
+      <button className="next-btn"></button>
     </section>
 
     <ul className="home--carousel-list">

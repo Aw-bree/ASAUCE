@@ -13,18 +13,22 @@
   @include row-center;
   @include flex-item-perf-center;
   border-right: 1px solid #999;
+  margin: 10px;
+  padding-right: 31px;
 }
 
 .footer--icon-bar--payment {
   @include row-center;
   @include flex-item-perf-center;
+  margin: 10px;
 }
 
 .footer--nav-links {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-columns: 25% 25% 25% 25%;
   height: 240px;
   background: $white-3;
+  padding-left: 0px;
 }
 
 // .footer--nav-links--col {
@@ -32,7 +36,7 @@
 
 .footer--nav-links--title {
   @include text-title-small;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   color: $grey-2;
 }
 
@@ -41,15 +45,20 @@
   list-style-position:inside;
   padding: 8px;
   color: $grey-2;
+  list-style: none;
+  padding-left: 0px;
 }
 
 .footer--nav-links--shipping {
-  @include row-center;
+  @include row-left-top;
+  justify-content: flex-start;
+  align-items: left;
 }
 
 .footer--nav-links--shipping-country {
   list-style-position:inside;
-  padding: 0px 19px;
+  list-style: none;
+  padding: 0px 0px;
   color: $grey-2;
   font-size: $ft-sz-2;
 }

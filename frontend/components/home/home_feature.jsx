@@ -11,7 +11,7 @@ export default () => (
       <a href="" className="general-btn">SHOP NOW</a>
     </section>
 
-    <ul className="home--double-feature">
+    <ul className="home--double--feature">
       <li className="home--double-feature--item">
         <a href="">
           <img id="home--double-feature--item--img" alt="" src="https://66.media.tumblr.com/8ec52eef708032a1eeefe1c7fa67154e/tumblr_pqt7mrVxZW1wyb2l8o2_1280.jpg"></img>

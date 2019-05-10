@@ -23,4 +23,5 @@ class Product < ApplicationRecord
   validates :product_code, :price, presence: true
 
   has_many_attached :photos
+  has_many :product_items
 end

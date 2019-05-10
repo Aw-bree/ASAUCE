@@ -7,8 +7,8 @@ export default () => (
 
     <section className="home--style-feed-carousel">
       <section className="home--carousel-controls">
-        <button className="home--prev-btn"></button>
-        <button className="home--next-btn"></button>
+        <button className="prev-btn"></button>
+        <button className="next-btn"></button>
       </section>
 
       <ul className="home--carousel-list">

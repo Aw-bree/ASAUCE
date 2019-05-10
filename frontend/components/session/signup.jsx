@@ -92,7 +92,7 @@ class Signup extends React.Component {
                 </label>
               
                 {/* fieldset adapted from http://html.cita.illinois.edu/nav/form/date/index.php?example=6 */}
-                <fieldset className="auth--fieldset"> 
+                {/* <fieldset className="auth--fieldset"> 
                   <legend className="auth--form-label">DATE OF BIRTH </legend> 
                   <label className="auth--fieldset-label">DD
                     <select className="auth--fieldset-helper" name="day" > 
@@ -242,7 +242,7 @@ class Signup extends React.Component {
                     </select> 
                   </label>
                   <p className="auth--form-subtitle">You need to be 16 or over to use ASOS</p> 
-                </fieldset>
+                </fieldset> */}
 
                 {/* <fieldset className="gender">
                   <legend>GENDER: </legend> 

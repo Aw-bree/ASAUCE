@@ -10,26 +10,20 @@ class Api::ProductsController < ApplicationController
   end
 
   def index
-    @products = Product.all
+    @products = Product.limit(12)
     render :index
   end
 
   def show
-    @product = Product.find(params[:id])
+    @product = Product.with_attached_photos.find(params[:id])
+    @product_items = @product.product_items
+    @orders = current_user.current_order
+    @order_items = Order.find(@orders[0].id).order_items
     
     if @product
       render :show
     else
       render json: @product.errors.full_messages, status: 404
     end
-  end
-
-  private
-
-  def product_params
-    params.require(:product).permit(
-      :title, :description, :model_size, :model_height, 
-      :fabric_stretch, :fabric_material, :main_fiber_content, 
-      :care_advice, :care_instructions, :price, :markdown, photos: [])
   end
 end
