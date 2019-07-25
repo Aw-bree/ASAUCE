@@ -1,17 +1,14 @@
-import { RECEIVE_CURRENT_USER, RECEIVE_SESSION_ERRORS } from '../actions/session';
-import { CLEAR_ERRORS } from '../actions/error_actions'; 
+import { RECEIVE_CURRENT_USER, RECEIVE_ERRORS, CLEAR_ERRORS } from '../actions/session';
 
-const _nullErrors = [];
-
-export default (state = _nullErrors, action) => {
+export default (state = [], action) => {
   Object.freeze(state);
   switch (action.type) {
-    case RECEIVE_SESSION_ERRORS:
-      return action.errors;
     case RECEIVE_CURRENT_USER:
-      return _nullErrors;
+      return [];
+    case RECEIVE_ERRORS:
+      return action.errors;
     case CLEAR_ERRORS:
-      return _nullErrors;
+      return [];
     default:
       return state;
   }

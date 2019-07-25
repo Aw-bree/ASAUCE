@@ -1,11 +1,12 @@
 import { connect } from 'react-redux';
-import { createNewUser } from '../../actions/session';
 import Signup from './signup';
+import { createNewUser } from '../../actions/session';
 
-const mapStateToProps = ({ errors }) => {
+
+const mapStateToProps = state => {
   return {
-    errors: errors.session,
     formType: 'signup',
+    errors: state.errors.session
   };
 };
 
