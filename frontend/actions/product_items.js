@@ -23,10 +23,12 @@ export const requestProductItem = (id) => dispatch => (
     .then(productItem => dispatch(receiveProductItem(productItem)))
 );
 
+// why is this returning? 
 export const updateProductItem = (productItem) => dispatch => {
   return productItemAPIUtil.updateProductItem(productItem)
     .then(response => dispatch(receiveProductItem(response)));
 }
+
 
 
 

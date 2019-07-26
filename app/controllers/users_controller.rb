@@ -12,7 +12,7 @@ class UsersController < ApplicationController
       login!(@user)
     else
       #$ custom message here
-      flash.now[:errors] = @user.errors.full_messages
+      flash.now[:errors] = @user.errors.messages
       render :new
     end
   end
