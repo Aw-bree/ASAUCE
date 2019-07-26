@@ -31,16 +31,32 @@ class Signup extends React.Component {
       .then(() => this.props.history.push('/'));
   }
 
-  renderErrors() {
-    let errs = this.props.errors.map((error, i) => (
-      <li className="auth--form-error" key={i}>{error}</li>
-    ));
+  // renderErrors() {
+  //   let errs = this.props.errors.map((error, i) => (
+  //     <li className="auth--form-error" key={i}>{error}</li>
+  //   ));
 
-    return (
-      <ul className="auth--form-errors">
-        {errs}
-      </ul>
-    );
+  //   return (
+  //     <ul className="auth--form-errors">
+  //       {errs}
+  //     </ul>
+  //   );
+  // }
+
+  renderErrors(attribute) {
+    let fieldErrors = this.props.errors[attribute];
+
+    if (fieldErrors !== undefined) {
+      fieldErrors.map((error, i) => (
+        <li className="auth--form-error" key={i}>{error}</li>
+      ));
+
+      return (
+        <ul className="auth--form-errors">
+          {fieldErrors}
+        </ul>
+      )
+    }
   }
 
 
@@ -68,6 +84,7 @@ class Signup extends React.Component {
                     value={this.state.email}
                     onChange={this.handleInput('email')}
                   />
+                  {this.renderErrors('email')}
                 </label>
                 <label className="auth--form-label">FIRST NAME:
                   <input className="auth--form-input"
@@ -75,6 +92,7 @@ class Signup extends React.Component {
                     value={this.state.first_name}
                     onChange={this.handleInput('first_name')}
                   />
+                  {this.renderErrors('first_name')}
                 </label>
                 <label className="auth--form-label">LAST NAME:
                   <input className="auth--form-input"
@@ -82,6 +100,7 @@ class Signup extends React.Component {
                     value={this.state.last_name}
                     onChange={this.handleInput('last_name')}
                   />
+                  {this.renderErrors('last_name')}
                 </label>
                 <label className="auth--form-label">PASSWORD
                   <input className="auth--form-input-password"
@@ -89,6 +108,7 @@ class Signup extends React.Component {
                     value={this.state.password}
                     onChange={this.handleInput('password')}
                   />
+                  {this.renderErrors('password')}
                 </label>
               
                 {/* fieldset adapted from http://html.cita.illinois.edu/nav/form/date/index.php?example=6 */}

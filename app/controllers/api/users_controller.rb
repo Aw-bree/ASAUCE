@@ -7,7 +7,7 @@ class Api::UsersController < ApplicationController
       create_order!(@user.id)
       render :show
     else
-      render json: @user.errors.full_messages, status: 401
+      render json: @user.errors.messages, status: 401
     end
   end
   

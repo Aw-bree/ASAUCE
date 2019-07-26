@@ -12,8 +12,8 @@ class UsersController < ApplicationController
       login!(@user)
     else
       #$ custom message here
-      flash.now[:errors] = @user.errors.messages
-      render :new
+      # flash.now[:errors] = @user.errors.full_messages_for(:password)
+      render json: @user.errors.messages, status: 404
     end
   end
 
