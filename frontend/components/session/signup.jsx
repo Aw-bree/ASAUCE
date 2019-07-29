@@ -47,7 +47,7 @@ class Signup extends React.Component {
     let fieldErrors = this.props.errors[attribute];
 
     if (fieldErrors !== undefined) {
-      fieldErrors.map((error, i) => (
+      fieldErrors = fieldErrors.map((error, i) => (
         <li className="auth--form-error" key={i}>{error}</li>
       ));
 

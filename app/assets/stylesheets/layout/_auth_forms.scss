@@ -2,6 +2,7 @@
   @include col-top-center;
   background-color: $white-3;
   height: 100%;
+  min-height: 800px;
 }
 
 .auth--container {
@@ -9,6 +10,7 @@
   height: 90%;
   margin: 0px;
   width: 600px;
+  min-height: 800px;
   border-radius: 2px;
   background-color: $white-2;
   padding: 0px;
@@ -75,10 +77,8 @@
 
 .auth--form-container {
   @include col-top-center;
-  height: 80%;
-  min-height: 530px;
   width: 650px;
-  margin-bottom: 140px;
+  min-height: 600px;
   background-color: #fff;
 }
 
@@ -139,7 +139,7 @@
   font-weight: $weight-4;
   letter-spacing: $letter-spacing-1;  
   color:black;
-  width: 90%;
+  width: 97%;
 }
 
 .auth--form-subtitle {
@@ -158,7 +158,8 @@
   background: $grey-4;
   color: $white-1;
   @include flex-item-perf-center;
-  margin: 25px 25%;
+  margin: 5%;
+  margin-left: 29%;
   text-align: center;
 }
 
@@ -178,13 +179,28 @@
 
 .auth--form-errors {
   list-style: none;
-    font-family: "futura-pt",Tahoma,Geneva,Verdana,Arial,sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: .4px;
-    text-decoration: none;
+  font-family: "futura-pt",Tahoma,Geneva,Verdana,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: .4px;
+  background-color: #fae7ec;
+  border: 2px solid #ce1948;
+  padding: 0;
+  max-width: 500px;
+  width: 67%;
+  position: relative;
+  left: 32%;
+  bottom: 105px;
+  box-sizing: border-box;
+}
+
+.auth--form-error {
+  padding: 5px 10px;
+  z-index: 10;
+  display: block;
+  background-color: #fae7ec;
 }
 
 // .auth--form-error {
