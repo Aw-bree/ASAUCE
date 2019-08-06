@@ -141,6 +141,7 @@
   color: $grey-1;
   width: 90%;
   line-height: 1.7;
+  position: relative;
 }
 
 .auth--form-input, .auth--form-input-password {
@@ -203,11 +204,10 @@
   background-color: #fae7ec;
   border: 2px solid #ce1948;
   padding: 0;
-  max-width: 500px;
-  width: 67%;
-  position: relative;
-  left: 32%;
-  bottom: 105px;
+  width: 342px;
+  position: absolute;
+  bottom: -5px;
+  left: 169px;
   box-sizing: border-box;
 }
 
@@ -216,7 +216,80 @@
   z-index: 10;
   display: block;
   background-color: #fae7ec;
+  font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: .4px;
+  color: black;
+  text-transform: capitalize;
 }
+
+.auth--login--form-errors {
+  list-style: none;
+  font-family: "futura-pt",Tahoma,Geneva,Verdana,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: .4px;
+  background-color: #fae7ec;
+  border: 2px solid #ce1948;
+  padding: 0;
+  width: 342px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.arrow-down {
+  position: absolute;
+  left: 10px;
+  bottom: -15px;
+  content: " ";
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 15px solid #ce1948;
+  height: 0;
+  width: 0;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  z-index: 1;
+}
+
+.arrow-down-2 {
+  position: absolute;
+  left: 10px;
+  bottom: -12px;
+  content: " ";
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 15px solid #fae7ec;
+  height: 0;
+  width: 0;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  z-index: 2;
+}
+
+.arrow-down-2 {
+  position: absolute;
+  left: 10px;
+  bottom: -12px;
+  content: " ";
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 15px solid #fae7ec;
+  height: 0;
+  width: 0;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  z-index: 2;
+}
+
 
 // .auth--form-error {
 

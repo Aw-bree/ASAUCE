@@ -37,7 +37,7 @@ class Login extends React.Component {
     } 
 
     return (
-      <ul className="auth--form-errors">
+      <ul className="auth--login--form-errors">
         {errs}
       </ul>
     );
@@ -64,6 +64,7 @@ class Login extends React.Component {
               <h2 className="auth--title">SIGN IN WITH EMAIL</h2>
               
               <form className="auth--login-form">
+                {this.renderErrors()}
                 <label className="auth--form-label">EMAIL ADDRESS:
                   <input className="auth--form-input"
                     type="text"
@@ -78,8 +79,6 @@ class Login extends React.Component {
                     onChange={this.handleInput('password')}
                   />
                 </label>
-                {this.renderErrors()}
-                
                 <button className="auth--button" onClick={this.handleSubmit}>Demo</button>
               </form>
               

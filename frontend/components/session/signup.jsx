@@ -54,6 +54,8 @@ class Signup extends React.Component {
       return (
         <ul className="auth--form-errors">
           {fieldErrors}
+          <div className="arrow-down"></div>
+          <div className="arrow-down-2"></div>
         </ul>
       )
     }
@@ -80,39 +82,43 @@ class Signup extends React.Component {
             <main className="auth--form--main--sign-up">
               
               <form class="auth--signup-form">
+                
                 <label className="auth--form-label">EMAIL ADDRESS:
+                {this.renderErrors('email')}
                   <input className="auth--form-input"
                     type="text"
                     value={this.state.email}
                     onChange={this.handleInput('email')}
                   />
-                  {this.renderErrors('email')}
                 </label>
+             
                 <label className="auth--form-label">FIRST NAME:
+                  {this.renderErrors('first_name')}
                   <input className="auth--form-input"
                     type="text"
                     value={this.state.first_name}
                     onChange={this.handleInput('first_name')}
                   />
-                  {this.renderErrors('first_name')}
                 </label>
+                
                 <label className="auth--form-label">LAST NAME:
+                  {this.renderErrors('last_name')}
                   <input className="auth--form-input"
                     type="text"
                     value={this.state.last_name}
                     onChange={this.handleInput('last_name')}
                   />
-                  {this.renderErrors('last_name')}
                 </label>
+                
                 <label className="auth--form-label">PASSWORD:
+                  {this.renderErrors('password')}   
                   <input className="auth--form-input-password"
                     type="password"
                     value={this.state.password}
                     onChange={this.handleInput('password')}
                   />
-                  {this.renderErrors('password')}
                 </label>
-              
+                           
                 {/* fieldset adapted from http://html.cita.illinois.edu/nav/form/date/index.php?example=6 */}
                 {/* <fieldset className="auth--fieldset"> 
                   <legend className="auth--form-label">DATE OF BIRTH </legend> 
@@ -289,7 +295,6 @@ class Signup extends React.Component {
                   <li>Tell me more about these...</li>
                   <li>By creating your account, you agree to our Terms and Conditions & Privacy Policy</li>
                 </ul> */}
-                {this.renderErrors()}
               </form>
               <button className="auth--button" onClick={this.handleSubmit}>JOIN ASOS</button>
             </main>
