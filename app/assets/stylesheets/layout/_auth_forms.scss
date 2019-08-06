@@ -1,7 +1,6 @@
 .auth {
   @include col-top-center;
   background-color: $white-3;
-  // height: 100%;
   min-height: 800px;
 }
 
@@ -290,15 +289,6 @@
   z-index: 2;
 }
 
-
-// .auth--form-error {
-
-// }
-
-// .auth--form-input-helpers {
-
-// }
-
 .auth--fieldset {
   display: inline-block;
   border: none;
@@ -307,11 +297,6 @@
 .auth--fieldset-label {
   width: 70%;
 }
-
-// .auth--fieldset-helper {
-  
-// }
-
 
 
 
