@@ -72,11 +72,13 @@ class Signup extends React.Component {
             <section className="auth--register">
               <ul className="auth--register--options">
                 <p className="auth--register--selected-left">NEW TO ASOS?</p>
-                <a href="#/login" className="auth--register--not-selected-right">Already registered?</a>
+                <a href="#/login" className="auth--register--not-selected-right">ALREADY REGISTERED?</a>
               </ul>
             </section>
 
+            <h2 className="auth--title">SIGN UP USING YOUR EMAIL ADDRESS</h2>
             <main className="auth--form--main--sign-up">
+              
               <form class="auth--signup-form">
                 <label className="auth--form-label">EMAIL ADDRESS:
                   <input className="auth--form-input"
@@ -102,7 +104,7 @@ class Signup extends React.Component {
                   />
                   {this.renderErrors('last_name')}
                 </label>
-                <label className="auth--form-label">PASSWORD
+                <label className="auth--form-label">PASSWORD:
                   <input className="auth--form-input-password"
                     type="password"
                     value={this.state.password}
@@ -287,9 +289,9 @@ class Signup extends React.Component {
                   <li>Tell me more about these...</li>
                   <li>By creating your account, you agree to our Terms and Conditions & Privacy Policy</li>
                 </ul> */}
-                <button className="auth--button" onClick={this.handleSubmit}>JOIN ASOS</button>
                 {this.renderErrors()}
               </form>
+              <button className="auth--button" onClick={this.handleSubmit}>JOIN ASOS</button>
             </main>
           </section>
         </ul>

@@ -25,9 +25,16 @@ class Login extends React.Component {
   }
 
   renderErrors() {
+
     let errs = this.props.errors.map((error, i) => (
       <li className="auth--form-error" key={i}>{error}</li>
     ));
+
+    if (errs.length === 0) {
+      return (
+        <div></div>
+      )
+    } 
 
     return (
       <ul className="auth--form-errors">
@@ -48,7 +55,7 @@ class Login extends React.Component {
             <section className="auth--register">
               <ul className="auth--register--options">
                 <a href="#/signup" className="auth--register--not-selected-left">NEW TO ASOS?</a>
-                <p className="auth--register--selected-right">Already registered?</p>
+                <p className="auth--register--selected-right">ALREADY REGISTERED?</p>
               </ul>
             </section>
 
@@ -66,12 +73,11 @@ class Login extends React.Component {
                 </label>
                 <label className="auth--form-label">PASSWORD
                   <input className="auth--form-input-password"
-                    type="password"
+                    type="password:"
                     value={this.state.password}
                     onChange={this.handleInput('password')}
                   />
                 </label>
-                
                 {this.renderErrors()}
                 
                 <button className="auth--button" onClick={this.handleSubmit}>Demo</button>

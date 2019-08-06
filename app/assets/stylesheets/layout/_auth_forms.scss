@@ -1,7 +1,7 @@
 .auth {
   @include col-top-center;
   background-color: $white-3;
-  height: 100%;
+  // height: 100%;
   min-height: 800px;
 }
 
@@ -11,13 +11,14 @@
   margin: 0px;
   width: 600px;
   min-height: 800px;
+  min-width: 650px;
   border-radius: 2px;
   background-color: $white-2;
   padding: 0px;
 }
 
 .auth--header {
-  margin: 25px;
+  margin: 25px 25px 21px 26px;
 }
 
 .auth--logo {
@@ -35,50 +36,65 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 25px
+  margin: 25px 25px 15px 25px;
 }
 
 .auth--register--options {
   @include row-between;
   @include text-title-small;
   width: 100%;
-  
+  padding: 1px 0px 0px 0px;
+}
+
+.auth--register--not-selected-left, .auth--register--not-selected-right,
+.auth--register--selected-left, .auth--register--selected-right {
+  text-decoration: none;
+  font-family: $text-font-stack-2;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13.4px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .auth--register--not-selected-right {
   width: 100%;
   border-bottom: 1px solid #999;
-  margin-right: 15px;
-  line-height: 52px;
+  margin-right: 22px;
+  line-height: 59px;
+  padding-left: 2px;
 }
 
 .auth--register--not-selected-left {
   width: 100%;
   border-bottom: 1px solid #999;
-  margin-left: 15px;
-  line-height: 52px;
+  margin-left: 17px;
+  line-height: 59px;
+  padding-right: 1px;
 }
 
 .auth--register--selected-right {
   width: 100%;
   border: 1px solid #999;
   border-bottom: none;
-  margin-right: 15px;
-  line-height: 52px;
+  margin-right: 17px;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .auth--register--selected-left {
   width: 100%;
   border: 1px solid #999;
   border-bottom: none;
-  margin-left: 15px;
-  line-height: 52px;
+  margin-left: 22px;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .auth--form-container {
   @include col-top-center;
   width: 650px;
-  min-height: 600px;
+  min-height: 500px;
   background-color: #fff;
 }
 
@@ -86,16 +102,16 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 80%;
-  justify-content: space-evenly;
+  width: 100%;
 }
 
 .auth--form--main--sign-up {
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-height: 500px;
   width: 80%;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   text-align: left;
 }
 
@@ -114,7 +130,7 @@
 .auth--title {
   @include text-title-medium;
   color: $black-1;
-  margin-bottom: 15px;
+  margin: 18px;
 }
 
 .auth--form-label {
@@ -123,23 +139,23 @@
   text-align: left;
   text-transform: uppercase;
   color: $grey-1;
-  margin-right: 0px;
   width: 90%;
   line-height: 1.7;
 }
 
 .auth--form-input, .auth--form-input-password {
   display: flex;
-  height: 45px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  justify-content: center;
+  height: 43px;
+  margin-top: 11px;
+  margin-bottom: 19px;
   border: 1px solid $grey-1;
   padding-left: 10px;
   font-size: $ft-sz-2;
   font-weight: $weight-4;
   letter-spacing: $letter-spacing-1;  
   color:black;
-  width: 97%;
+  width: 96%;
 }
 
 .auth--form-subtitle {
@@ -150,17 +166,16 @@
 .auth--button {
   @include text-title-medium;
   font-size: $ft-sz-2;
-  height: 80px;
-  line-height: 52px;
+  line-height: 45px;
   min-width: 200px;
-  width: 39%;
+  width: 76.5%;
+  height: 45px;
   border: 0px;
   background: $grey-4;
   color: $white-1;
   @include flex-item-perf-center;
-  margin: 5%;
-  margin-left: 29%;
   text-align: center;
+  margin: 10px 10%;
 }
 
 .auth--form-input-password {
