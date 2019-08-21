@@ -3,9 +3,13 @@ import React from 'react';
 export default () => (
   <section className="home--feature" >
     <a href="" className="home--feature-img">
-      <img alt="" src="https://content.asos-media.com/-/media/homepages/ww/2019/04/29/gbl-utility-surf-hero.jpg"></img>
+      <img
+        alt=""
+        src="https://content.asos-media.com/-/media/homepages/ww/2019/04/29/gbl-utility-surf-hero.jpg"
+      >
+      </img>
     </a>
-    
+
     <section className="home--feature--buttons">
       <a href="" className="home--large-feature-title">Surfer vibes</a>
       <a href="" className="general-btn">SHOP NOW</a>
@@ -30,11 +34,11 @@ export default () => (
         <a href="" className="general-btn">SHOP NOW</a>
       </li>
     </ul>
-    
+
     <div className="home--feature-banner" >
       <a href="">
         {/* <img alt="" src="https://66.media.tumblr.com/db0a3e539cd45c27b6ef4e0e8127bd0d/tumblr_pqt6uwiL6G1wyb2l8o2_250.gif"></img> */}
       </a>
     </div>
   </section>
-);
+)
