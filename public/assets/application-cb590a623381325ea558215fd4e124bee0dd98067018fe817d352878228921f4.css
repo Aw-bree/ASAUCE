@@ -1,0 +1,1679 @@
+/* line 93, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/helpers/_mixins.scss */
+.payment-icon {
+  width: 30px;
+  height: auto;
+  padding: 0px 17px;
+}
+
+/* line 99, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/helpers/_mixins.scss */
+.social-icon {
+  width: 30px;
+  height: auto;
+  padding: 0px 17px;
+}
+
+/* line 1, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/base/_reset.scss */
+html, body, section, article,
+h1, h2, p, strong, em, a, input,
+button {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+  list-style-type: none;
+  font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+  max-width: 100%;
+}
+
+/* line 19, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/base/_reset.scss */
+html, body, #root, #app, #main {
+  height: 100%;
+}
+
+/* line 23, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/base/_reset.scss */
+div:focus {
+  display: none;
+}
+
+/* line 27, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/base/_reset.scss */
+select:focus {
+  outline: none;
+}
+
+/* line 31, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/base/_reset.scss */
+textarea:focus {
+  outline: none;
+}
+
+/* line 2, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.ecom-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+  color: #f9f9f9;
+}
+
+/* line 8, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.ecom--list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin-right: 33px;
+  border-right: 1px solid #ddd;
+}
+
+/* line 15, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.ecom-list--item {
+  line-height: 30px;
+  padding: 0px 20px;
+  border-left: 1px solid #ddd;
+  font-size: 12px;
+  letter-spacing: .4px;
+  font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+  color: #666666;
+}
+
+/* line 25, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.ecom-list--item-img {
+  border-left: 1px solid #ddd;
+}
+
+/* line 29, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.shipping--icon {
+  width: 18px;
+  height: 18px;
+  padding: 0px 17px;
+  width: 16px;
+  height: 16px;
+  padding: 0px 17px;
+  align-content: center;
+  line-height: 100%;
+  align-items: center;
+  padding-top: 4.5px;
+}
+
+/* line 41, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2d2d;
+  height: 60px;
+}
+
+/* line 47, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.toolbar--business {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 30%;
+  margin-right: 20px;
+  padding-left: 0px;
+}
+
+/* line 58, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.toolbar--busienss--item {
+  height: inherit;
+  margin: auto;
+  line-height: 99%;
+  font-size: .875rem;
+  font-family: futura-pt,sans-serif;
+  text-align: center;
+  color: #666666;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: white;
+  padding: 24px 24px;
+  border-left: 1px solid #525050;
+  width: 65px;
+  border-style: border-box;
+}
+
+/* line 74, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.toolbar--business--logo {
+  height: inherit;
+  margin: auto;
+  width: 104px;
+  height: 30px;
+  margin-right: 24px;
+  padding-left: 30px;
+  display: flex;
+}
+
+/* line 83, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.toolbar--search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 71.4285714286%;
+  width: calc(100% / 1.4);
+  line-height: 80px;
+  width: 705px;
+}
+
+/* line 90, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.toolbar--search--input {
+  background-color: #fff;
+  color: #666666;
+  width: 100%;
+  background-image: url("https://workofthefuture.mit.edu/themes/custom/wof/images/search.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 99%;
+  background-size: 25px 25px;
+  font-size: 1rem;
+  border: 0;
+  height: 38px;
+  border-radius: 19px/50%;
+  padding-left: 16px;
+  padding-right: 46px;
+  box-sizing: border-box;
+  color: #2d2d2d;
+  text-align: left;
+}
+
+/* line 111, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.toolbar--profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 20px;
+  height: 100%;
+  line-height: 50px;
+  padding-left: 0px;
+}
+
+/* line 120, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.toolbar--profile--icons {
+  width: calc(100% / 1.5);
+  color: #fff;
+  display: flex;
+  flex-direction: colunn;
+  align-items: center;
+  list-style-type: none;
+  justify-content: flex-start;
+  margin-right: 20px;
+  padding-left: 0px;
+}
+/* line 131, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.toolbar--profile--icons i {
+  height: inherit;
+  margin: auto;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 1.2em;
+  margin: 0px 12px;
+}
+/* line 138, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.toolbar--profile--icons button {
+  padding-top: 5px;
+  height: inherit;
+  margin: auto;
+  scale: 0.8, 0.8;
+  margin: 0px 12px;
+}
+
+/* line 146, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.account-dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 99;
+  position: absolute;
+  top: 91px;
+  right: 22px;
+  width: 202px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: -2px 2px 4px 0 rgba(45, 45, 45, 0.14);
+  display: none;
+}
+
+/* line 159, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.toolbar--profile:hover .account-dropdown {
+  display: flex;
+}
+
+/* line 163, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--auth {
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #eee;
+  height: 50px;
+  box-sizing: border-box;
+  margin-left: 0px;
+  line-height: 50px;
+  color: #525050;
+  padding-left: 0px;
+  width: 100%;
+}
+
+/* line 177, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--auth--user {
+  font-weight: bolder;
+  color: #2d2d2d;
+  padding-left: 0px;
+  font-size: 11px;
+  font-weight: none;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-left: 16px;
+}
+
+/* line 187, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--auth--logout {
+  font-size: 14px;
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin-left: 8px;
+  margin-right: 4px;
+}
+
+/* line 194, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--auth--auth-links {
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  display: inline;
+  text-decoration: underline;
+  padding-left: 18px;
+}
+
+/* line 202, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+/* line 207, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--option {
+  padding-left: 20px;
+  font-size: 14px;
+  border-bottom: none;
+}
+
+/* line 217, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.category-bar {
+  z-index: -2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: #525050;
+  height: 50px;
+}
+
+/* line 224, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.category-bar--options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: inherit;
+  width: 100%;
+  list-style: none;
+  padding: 0px 0px;
+  margin: 0px 30px;
+  align-content: left;
+  justify-content: flex-start;
+}
+
+/* line 237, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.category-bar--option {
+  height: inherit;
+  margin: auto;
+  color: white;
+  padding: 0px 10px;
+  font-weight: none;
+  text-align: center;
+  line-height: 50px;
+  border: none;
+  background-color: #525050;
+  margin: 0;
+  font-size: .875rem;
+  font-family: futura-pt,sans-serif;
+  font-size: 11px;
+  font-weight: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* line 254, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.category-bar--feature {
+  height: inherit;
+  margin: auto;
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin-top: 42%;
+  background: #f20038;
+  position: relative;
+  top: -17px;
+  height: 50px;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  width: 70px;
+  margin: 17px 0px;
+}
+
+/* line 268, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_header.scss */
+.category-bar--feature p {
+  color: white;
+  font-weight: none;
+  text-align: center;
+  line-height: 50px;
+  border: none;
+  font-size: .875rem;
+  font-family: futura-pt,sans-serif;
+  font-size: 11px;
+  font-weight: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* line 1, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
+
+/* line 7, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.footer--icon-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 30px;
+}
+
+/* line 12, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.footer--icon-bar--social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: inherit;
+  margin: auto;
+  border-right: 1px solid #999;
+  margin: 10px;
+  padding-right: 31px;
+}
+
+/* line 20, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.footer--icon-bar--payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: inherit;
+  margin: auto;
+  margin: 10px;
+}
+
+/* line 26, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.footer--nav-links {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: 240px;
+  background: #EEEEEE;
+  padding-left: 0px;
+}
+
+/* line 37, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.footer--nav-links--title {
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #666666;
+}
+
+/* line 43, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.footer--nav-links--item {
+  font-size: 11px;
+  font-weight: none;
+  list-style-position: inside;
+  padding: 8px;
+  color: #666666;
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* line 52, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.footer--nav-links--shipping {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+/* line 58, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.footer--nav-links--shipping-country {
+  list-style-position: inside;
+  list-style: none;
+  padding: 0px 0px;
+  color: #666666;
+  font-size: 14px;
+}
+
+/* line 66, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.footer--nav-links--shipping-change {
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: #666666;
+}
+
+/* line 71, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.shipping-icon {
+  width: 18px;
+  height: 18px;
+  padding: 0px 17px;
+}
+
+/* line 75, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.footer--ecom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background: #DDDDDD;
+}
+
+/* line 81, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.footer--ecom-copy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  color: #666666;
+  margin-left: 3%;
+}
+
+/* line 89, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.footer--ecom--terms {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+/* line 95, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_footer.scss */
+.footer--ecom--terms-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-left: 1px solid #2d2d2d;
+  padding: 0px 19px;
+  list-style-position: inside;
+  color: #666666;
+  font-size: 11px;
+}
+
+@media screen and (min-width: 700px) {
+  @supports (display: flex) {
+    /* line 7, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+    .home--feature ul,
+    .home--style-feed-carousel ul,
+    .home--double--feature ul,
+    .home--category-carousel ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-left: 0px;
+    }
+
+    /* line 17, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+    .home--feature--item,
+    .home--double-feature--item {
+      width: 60%;
+      list-style-type: none;
+    }
+
+    /* line 23, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+    .home--style-feed-carousel--item,
+    .home--category-carousel--list--item {
+      width: 40%;
+      list-style-type: none;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  @supports (display: grid) {
+    /* line 35, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+    .home {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 40px;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    /* line 45, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+    .home img {
+      display: block;
+      border: 0;
+      width: 100%;
+      height: auto;
+    }
+    /* line 52, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+    .home .home--feature-img {
+      width: 95%;
+      margin: auto;
+    }
+    /* line 57, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+    .home .home--banner-img {
+      width: 100%;
+    }
+    /* line 61, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+    .home .home--double-feature--item--img {
+      width: 70%;
+      margin: auto;
+    }
+    /* line 66, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+    .home .home--banner-bar {
+      border-bottom: 1px solid #ddd;
+    }
+    /* line 70, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+    .home .home--double--feature ul {
+      display: flex;
+      flex-direction: row;
+    }
+
+    /* line 77, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+    .home--banner,
+    .home--banner-img,
+    .home--category-carousel,
+    .home--style-feed,
+    .home--feature,
+    .home--double-feature,
+    .home--feature ul {
+      grid-column: 1/3;
+    }
+  }
+}
+/* line 90, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+.home {
+  position: relative;
+  z-index: -2;
+}
+
+/* line 95, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+.home--banner-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  background: #EA92B2;
+}
+
+/* line 101, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+.home--banner-bar--item {
+  width: 100px;
+  height: 28px;
+  margin: 30px;
+  border: 2px solid black;
+  text-align: center;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+/* line 111, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+.home--large-feature-title {
+  font-size: 50px;
+  line-height: 36px;
+  font-weight: bolder;
+  letter-spacing: 1.2px;
+  margin-bottom: 29px;
+}
+
+/* line 116, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+.home--feature--buttons {
+  position: relative;
+  top: -25%;
+  left: 43%;
+  display: flex;
+  flex-direction: column;
+}
+/* line 123, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+.home--feature--buttons a {
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+
+/* line 130, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+.home--style-feed-title {
+  font-size: 14px;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  color: #222;
+}
+
+/* line 135, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+.home--style-feed-body {
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: #666666;
+}
+
+/* line 140, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+.home--style-feed-date {
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 9px;
+  color: #2d2d2d;
+}
+
+/* line 146, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+.home--double-feature--item {
+  padding-left: 0px;
+}
+
+/* line 150, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+.home--double--feature {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+/* line 156, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+.home--double--feature ul {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 175, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_home_grid.scss */
+.home--carousel-list {
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* line 1, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-color: #EEEEEE;
+  min-height: 800px;
+}
+
+/* line 7, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: 90%;
+  margin: 0px;
+  width: 600px;
+  min-height: 800px;
+  min-width: 650px;
+  border-radius: 2px;
+  background-color: #eee;
+  padding: 0px;
+}
+
+/* line 19, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--header {
+  margin: 25px 25px 21px 26px;
+}
+
+/* line 23, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--logo {
+  margin: 25px;
+  width: 95px;
+  height: 28px;
+  background: #eee;
+}
+
+/* line 30, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--register {
+  height: 62px;
+  width: 99%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 25px 25px 15px 25px;
+}
+
+/* line 41, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--register--options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  width: 100%;
+  padding: 1px 0px 0px 0px;
+}
+
+/* line 48, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--register--not-selected-left, .auth--register--not-selected-right,
+.auth--register--selected-left, .auth--register--selected-right {
+  text-decoration: none;
+  font-family: futura-pt, Tahoma, Geneva, Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13.4px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* line 59, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--register--not-selected-right {
+  width: 100%;
+  border-bottom: 1px solid #999;
+  margin-right: 22px;
+  line-height: 59px;
+  padding-left: 2px;
+}
+
+/* line 67, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--register--not-selected-left {
+  width: 100%;
+  border-bottom: 1px solid #999;
+  margin-left: 17px;
+  line-height: 59px;
+  padding-right: 1px;
+}
+
+/* line 75, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--register--selected-right {
+  width: 100%;
+  border: 1px solid #999;
+  border-bottom: none;
+  margin-right: 17px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+/* line 84, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--register--selected-left {
+  width: 100%;
+  border: 1px solid #999;
+  border-bottom: none;
+  margin-left: 22px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+/* line 93, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 650px;
+  min-height: 500px;
+  background-color: #fff;
+}
+
+/* line 100, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form--main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 107, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form--main--sign-up {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 500px;
+  width: 80%;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+/* line 117, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 63%;
+  padding: 0 18.5%;
+}
+
+/* line 124, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--signin-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+/* line 129, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--title {
+  font-size: 14px;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  color: #222;
+  margin: 18px;
+}
+
+/* line 135, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-label {
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  height: inherit;
+  margin: auto;
+  text-align: left;
+  text-transform: uppercase;
+  color: #999;
+  width: 90%;
+  line-height: 1.7;
+  position: relative;
+}
+
+/* line 146, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-input, .auth--form-input-password {
+  display: flex;
+  justify-content: center;
+  height: 43px;
+  margin-top: 11px;
+  margin-bottom: 19px;
+  border: 1px solid #999;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  color: black;
+  width: 96%;
+}
+
+/* line 161, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-subtitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 166, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--button {
+  font-size: 14px;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  font-size: 14px;
+  line-height: 45px;
+  min-width: 200px;
+  width: 76.5%;
+  height: 45px;
+  border: 0px;
+  background: #2d2d2d;
+  color: #fff;
+  height: inherit;
+  margin: auto;
+  text-align: center;
+  margin: 10px 10%;
+}
+
+/* line 181, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-input-password {
+  letter-spacing: 8px;
+}
+
+/* line 185, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-password-helper {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* line 195, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-errors {
+  list-style: none;
+  font-family: "futura-pt",Tahoma,Geneva,Verdana,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: .4px;
+  background-color: #fae7ec;
+  border: 2px solid #ce1948;
+  padding: 0;
+  width: 342px;
+  position: absolute;
+  bottom: -5px;
+  left: 169px;
+  box-sizing: border-box;
+}
+
+/* line 213, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-error {
+  padding: 5px 10px;
+  z-index: 10;
+  display: block;
+  background-color: #fae7ec;
+  font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: .4px;
+  color: black;
+  text-transform: capitalize;
+}
+
+/* line 228, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--login--form-errors {
+  list-style: none;
+  font-family: "futura-pt",Tahoma,Geneva,Verdana,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: .4px;
+  background-color: #fae7ec;
+  border: 2px solid #ce1948;
+  padding: 0;
+  width: 342px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* line 244, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.arrow-down {
+  position: absolute;
+  left: 10px;
+  bottom: -15px;
+  content: " ";
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 15px solid #ce1948;
+  height: 0;
+  width: 0;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  z-index: 1;
+}
+
+/* line 260, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.arrow-down-2 {
+  position: absolute;
+  left: 10px;
+  bottom: -12px;
+  content: " ";
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 15px solid #fae7ec;
+  height: 0;
+  width: 0;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  z-index: 2;
+}
+
+/* line 276, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.arrow-down-2 {
+  position: absolute;
+  left: 10px;
+  bottom: -12px;
+  content: " ";
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 15px solid #fae7ec;
+  height: 0;
+  width: 0;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  z-index: 2;
+}
+
+/* line 292, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--fieldset {
+  display: inline-block;
+  border: none;
+}
+
+/* line 297, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--fieldset-label {
+  width: 70%;
+}
+
+/* line 1, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/components/_buttons.scss */
+.general-btn {
+  box-sizing: border-box;
+  border: 2px solid black;
+  padding: 9px 20px;
+  text-align: center;
+  line-height: 39px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* line 12, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/components/_buttons.scss */
+.style-feed-btn {
+  background: #eee;
+  box-sizing: border-box;
+  padding: 9px 20px;
+  text-align: center;
+  line-height: 39px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* line 2, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show {
+  border-bottom: 1px solid #DDDDDD;
+}
+
+/* line 8, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* line 12, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--photos-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-items: flex-start;
+}
+
+/* line 17, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--photos-aside-wrapper {
+  margin: 35px;
+}
+
+/* line 21, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product--show--cart-aside-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-items: flex-start;
+  width: 33%;
+}
+
+/* line 27, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--detail-wrapper,
+.product-show--deatil-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 33, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--deatil--items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  align-items: flex-start;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+/* line 41, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--detail--item {
+  text-align: left;
+  margin: 0px;
+}
+/* line 45, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--detail--item ul, .product-show--detail--item li, .product-show--detail--item p, .product-show--detail--item h3 {
+  list-style: none;
+  text-align: left;
+  padding: 0px;
+}
+
+/* line 55, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--aside--photos {
+  list-style-type: none;
+}
+
+/* line 59, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.listings--product--show--img {
+  width: 100%;
+  max-width: 65px;
+  margin: 15px;
+}
+
+/* line 67, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside {
+  width: 90%;
+  text-align: left;
+}
+
+/* line 72, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside-items--title {
+  width: 70%;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  font: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  word-wrap: break-word;
+  color: #525050;
+  letter-spacing: 1.4px;
+  text-transform: none;
+}
+
+/* line 85, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside-items--price-wrapper,
+.product-show--cart-aside-items--color-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0px;
+}
+
+/* line 95, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside-items--price {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bolder;
+  letter-spacing: 1.2px;
+  padding-right: 15px;
+  color: #2d2d2d;
+}
+
+/* line 101, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside-items--shipping {
+  line-height: 36px;
+  text-decoration-line: underline;
+  color: #525050;
+}
+
+/* line 107, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside-items--color-title {
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  padding-right: 15px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* line 115, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside-items--color {
+  margin-top: 30px;
+  color: #2d2d2d;
+}
+
+/* line 120, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside--form {
+  list-style: none;
+  margin-top: 30px;
+}
+
+/* line 126, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--detail--item p, .product-show--detail--item li {
+  padding: 5px;
+  color: #2d2d2d;
+}
+
+/* line 132, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--detail--item--title {
+  font-size: 14px;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  color: #666666;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* line 141, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside--form--sizing {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  width: 220px;
+  height: 40px;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 400 11px system-ui;
+  border-radius: none;
+  -webkit-appearance: menulist;
+  box-sizing: border-box;
+  align-items: center;
+  white-space: pre;
+  -webkit-rtl-ordering: logical;
+  color: black;
+  background-color: #f8f8f8;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a6a6a6;
+  border-image: initial;
+  overflow: visible !important;
+}
+
+/* line 176, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside--form--add-to-cart {
+  width: 100%;
+  float: left;
+  background-color: #00AA5B;
+  display: table;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  height: 40px;
+  text-transform: uppercase;
+  padding-top: 1px;
+  margin-top: 28px;
+}
+
+/* line 190, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside--form--add-to-cart:hover {
+  background-color: #00802b;
+}
+
+/* line 194, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside--form--add-to-cart:focus {
+  box-shadow: 0 0 5px #51cbee;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #51cbee;
+}
+
+/* line 1, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_index.scss */
+.listings--category-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 82px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+/* line 9, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_index.scss */
+.listings--category-banner--text {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bolder;
+  letter-spacing: 1.2px;
+}
+
+/* line 13, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_index.scss */
+.listings--filter--item {
+  list-style: none;
+}
+
+/* line 17, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_index.scss */
+.listings--count, .listings--viewed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #999;
+  padding: 10px;
+  line-height: 20px;
+  list-style: none;
+}
+/* line 24, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_index.scss */
+.listings--count h3, .listings--viewed h3 {
+  font-size: 15px;
+  letter-spacing: .5px;
+  font-weight: normal;
+}
+
+/* line 31, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_index.scss */
+.listings--grid-wrapper {
+  background-color: #FFFFFF;
+}
+
+/* line 35, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_index.scss */
+.listings--products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* line 44, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_index.scss */
+.listings--product {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+/* line 50, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_index.scss */
+.listings--product-img {
+  width: 300px;
+}
+
+/* line 54, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_index.scss */
+.listings--product-title {
+  width: 300px;
+  height: 30px;
+  margin: 18px 0px;
+  word-wrap: break-word;
+  line-height: 30px;
+  font-size: 1rem;
+  color: #2d2d2d;
+  letter-spacing: 0.4px;
+  font: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+}
+
+/* line 66, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_index.scss */
+.listings--product-price {
+  width: 300px;
+  font-weight: bolder;
+  color: #666;
+  letter-spacing: 2px;
+  margin: 18px 0px;
+  font-size: 1rem;
+}
+
+/* line 75, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_index.scss */
+.listings--load-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 78, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_products_index.scss */
+.listings--load-more h3 {
+  font-size: 14px;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  font-size: 20px;
+  color: #2d2d2d;
+  border: 2px solid #ddd;
+  max-width: 300px;
+  padding: 15px;
+  margin: 16px;
+  width: 100%;
+}
+
+/* line 5, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.order {
+  height: 100%;
+}
+
+/* line 13, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.order--container {
+  background-color: #eee;
+  min-height: 390px;
+  min-width: 800px;
+  width: 100%;
+  height: 100%;
+  color: #2d2d2d;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+/* line 24, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.order--wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+}
+
+/* line 31, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.order--main {
+  list-style: none;
+  padding: 0px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-top: 8px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* line 41, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.order--listings--wrapper {
+  width: 90%;
+}
+
+/* line 45, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.order--listings--header {
+  text-align: left;
+  align-items: left;
+  padding: 0px;
+  margin: 20px 10px;
+  font-size: 14px;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  font-size: 1.15em;
+  font-style: normal;
+  letter-spacing: 2.5px;
+  line-height: 2em;
+  font-family: futura-pt-n7,futura-pt,"Futura PT","Futura Book",Tahoma,Geneva,Verdana,Arial,sans-serif;
+}
+
+/* line 58, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.order--listings {
+  padding: 0px;
+  margin: 0px 10px;
+  border-top: 1px solid #eee;
+}
+
+/* line 64, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.order--listings--subtotal {
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+/* line 69, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.order--listings--subtotal--price {
+  margin-left: 44px;
+}
+
+/* line 73, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.listing--item--wrapper {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* line 79, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.listing--item--photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px;
+  width: 110px;
+  height: 140px;
+}
+
+/* line 86, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.listing--item--img {
+  width: 110px;
+  height: 140px;
+}
+
+/* line 91, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.listing--details--wrapper {
+  width: 60%;
+  margin: 20px;
+}
+
+/* line 96, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.listing--details {
+  padding: 0px;
+}
+
+/* line 100, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.listing--details--header {
+  text-align: left;
+  padding: 0px;
+  color: #2d2d2d;
+  font-family: futura-pt-n7,futura-pt,"Futura PT","Futura Book",Tahoma,Geneva,Verdana,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: .85em;
+  padding-right: .3em;
+}
+
+/* line 111, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.listing--details--brand {
+  text-align: left;
+  padding: 0px;
+}
+
+/* line 116, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.listing--title {
+  text-align: left;
+  padding: 0px;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 125, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.listing--details--specs--wrapper {
+  text-align: left;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* line 142, /Users/aubrierice/Desktop/ASAUCE/app/assets/stylesheets/pages/_orders_show.scss */
+.listing--remove--btn {
+  margin: 20px 10px;
+  padding: 0px;
+}
