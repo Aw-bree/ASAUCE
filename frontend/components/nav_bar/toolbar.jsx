@@ -64,7 +64,7 @@ class Toolbar extends React.Component {
           <li className="toolbar--busienss--item">MEN</li>
         </ul>
         <form className="toolbar--search">
-          <input className="toolbar--search--input" type="text" value="search text" />
+          {/* <input className="toolbar--search--input" type="text" value="search text" /> */}
         </form>
         <ul className="toolbar--profile">
           <li className="toolbar--profile--icons">
