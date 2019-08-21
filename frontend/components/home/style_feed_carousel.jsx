@@ -112,7 +112,7 @@ export default () => (
         </li> */}
 
         <li className="home--style-feed-carousel--item">
-          <a href="">
+          <a href="" className="btn--view-all">
             <span className="home-style-feed-carousel-view-btn">VIEW ALL</span>
           </a>
         </li>
