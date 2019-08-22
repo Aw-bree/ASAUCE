@@ -37,7 +37,7 @@
   "license": "ISC",
   "devDependencies": {},
   "engines": {
-    "node": "8.9.4",
-    "npm": "5.6.0"
+    "node": "12.5.0",
+    "npm": "6.9.0"
   }
 }
