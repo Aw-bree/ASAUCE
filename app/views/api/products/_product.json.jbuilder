@@ -9,4 +9,5 @@ json.extract! product,
   :care_advice,
   :care_instructions,
   :price,
-  :markdown
+  :markdown,
+  :product_code

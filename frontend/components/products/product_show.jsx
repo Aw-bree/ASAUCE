@@ -99,7 +99,7 @@ class ProductShow extends React.Component {
 
             <ul className="product-show--cart-aside-items--color-wrapper">
               <li className="product-show--cart-aside-items--color-title">Color: </li>
-              <li className="product-show--cart-aside-items--color">Some color</li>
+              <li className="product-show--cart-aside-items--color">{product.color}</li>
             </ul>       
 
             <section className="product-show--cart-aside--form">
@@ -121,10 +121,10 @@ class ProductShow extends React.Component {
         <ul className="product-show--deatil--items">
           <ul className="product-show--detail--item">
             <h3 className="product-show--detail--item--title">PRODUCT DETAILS</h3>
-            <p className="product-show--detail--item--subtitle">Category by brand</p>
+            <p className="product-show--detail--item--subtitle">{product.category} by {product.brand}</p>
             <ul className="product-show--detail--item--details">
               <li className="product-show--detail--item--details--item">
-                details here
+                {product.subCategory}
               </li>
             </ul>
           </ul>
@@ -132,10 +132,10 @@ class ProductShow extends React.Component {
           <ul className="product-show--detail--item">
             <ul className="product-show--detail--area">
               <h3 className="product-show--detail--item--title">PRODUCT CODE</h3>
-              <p>{product.code}</p>
+              <p>{product.product_code}</p>
               <ul className="product-show--detail--area">
                 <h3 className="product-show--detail--item--title">BRAND</h3>
-                <p>brand here</p>
+                <p>{product.brand}</p>
               </ul>
             </ul >    
           </ul>
