@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_07_202712) do
+ActiveRecord::Schema.define(version: 2019_09_18_202014) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,10 @@ ActiveRecord::Schema.define(version: 2019_05_07_202712) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "attributes", force: :cascade do |t|
+    t.string "name", null: false
+  end
+
   create_table "order_items", force: :cascade do |t|
     t.integer "order_id", null: false
     t.integer "product_item_id", null: false
@@ -57,6 +61,15 @@ ActiveRecord::Schema.define(version: 2019_05_07_202712) do
     t.index ["state"], name: "index_product_items_on_state"
   end
 
+  create_table "product_tags", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "product_id", null: false
+    t.integer "tag_id", null: false
+    t.index ["product_id"], name: "index_product_tags_on_product_id"
+    t.index ["tag_id"], name: "index_product_tags_on_tag_id"
+  end
+
   create_table "products", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -73,6 +86,14 @@ ActiveRecord::Schema.define(version: 2019_05_07_202712) do
     t.decimal "price", null: false
     t.decimal "markdown"
     t.index ["title"], name: "index_products_on_title"
+  end
+
+  create_table "tags", force: :cascade do |t|
+    t.integer "attribute_id", null: false
+    t.integer "parent_tag_id"
+    t.string "name", null: false
+    t.index ["attribute_id"], name: "index_tags_on_attribute_id"
+    t.index ["parent_tag_id"], name: "index_tags_on_parent_tag_id"
   end
 
   create_table "users", force: :cascade do |t|
