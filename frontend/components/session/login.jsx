@@ -48,7 +48,7 @@ class Login extends React.Component {
       <section className="auth">
         <ul className="auth--container">
           <section className="auth--header">
-            <a class-name="auth--logo" href="#/"><img src="https://66.media.tumblr.com/a1f4e385d907cf5bdc70bf919143ca2d/tumblr_pqt9m9O3uK1wyb2l8o1_100.png" height="28" width="95" alt="ASOS logo"></img></a>
+            <a className="auth--logo" href="#/"><img src="https://66.media.tumblr.com/a1f4e385d907cf5bdc70bf919143ca2d/tumblr_pqt9m9O3uK1wyb2l8o1_100.png" height="28" width="95" alt="ASOS logo"></img></a>
           </section>
 
           <section className="auth--form-container">

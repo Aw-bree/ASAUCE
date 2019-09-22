@@ -17,8 +17,8 @@ class Api::ProductsController < ApplicationController
   def show
     @product = Product.with_attached_photos.find(params[:id])
     @product_items = @product.product_items
-    @orders = current_user.current_order
-    @order_items = Order.find(@orders[0].id).order_items
+    # @orders = current_user.current_order
+    # @order_items = Order.find(@orders[0].id).order_items
     
     if @product
       render :show

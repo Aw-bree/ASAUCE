@@ -15,9 +15,15 @@ class ProductShow extends React.Component {
   }
 
   componentDidMount() {
-    let productId = this.props.match.params.productId;
+    const productId = this.props.match.params.productId;
     this.props.requestProduct(productId);
+  }
 
+  componentDidUpdate(prevProps) {
+    const productId = this.props.match.params.productId;
+    if (this.props.location.pathname !== prevProps.location.pathname) {
+      this.props.requestProduct(productId);
+    }
   }
 
   handleInput(type) {

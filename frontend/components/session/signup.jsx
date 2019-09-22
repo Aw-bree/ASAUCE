@@ -81,7 +81,7 @@ class Signup extends React.Component {
             <h2 className="auth--title">SIGN UP USING YOUR EMAIL ADDRESS</h2>
             <main className="auth--form--main--sign-up">
               
-              <form class="auth--signup-form">
+              <form className="auth--signup-form">
                 
                 <label className="auth--form-label">EMAIL ADDRESS:
                 {this.renderErrors('email')}

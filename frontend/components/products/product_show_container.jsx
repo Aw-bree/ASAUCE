@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import React from 'react';
 import { requestProduct } from '../../actions/products';
 import { createOrderItem } from '../../actions/order_items';
 import { updateProductItem } from '../../actions/product_items';

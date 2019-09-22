@@ -29,7 +29,7 @@ const Auth = ({ loggedIn, path, component: Component }) => (
     )}
   />
 );
-// logic with ternary if path matches /chirps kick out to login 
+// logic with ternary if path matches /products kick out to login 
 
 const Protected = ({ loggedIn, path, component: Component }) => (
   <Route
