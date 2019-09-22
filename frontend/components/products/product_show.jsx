@@ -33,7 +33,7 @@ class ProductShow extends React.Component {
   }
 
   handleSubmit(e) {
-
+    debugger
     e.preventDefault();
     let product_item_id = selectOrderProductItemId(this.props.productItems, this.state.size);
     let productItem = {

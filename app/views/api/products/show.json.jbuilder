@@ -16,17 +16,19 @@ json.product_items do
   end
 end
 
-# json.orders do
-#   json.id @orders.ids[0]
-# end
+@orders ||= {}
+json.orders do
+  json.id @orders.ids[0]
+end
 
-# json.order_items do 
-#   @order_items.each do |order_item|
-#     json.set! order_item.id do 
-#       json.extract! order_item, :id, :order_id, :product_item_id
-#     end
-#   end
-# end
+@orderItems ||= {}
+json.order_items do 
+  @order_items.each do |order_item|
+    json.set! order_item.id do 
+      json.extract! order_item, :id, :order_id, :product_item_id
+    end
+  end
+end
 
 
 
