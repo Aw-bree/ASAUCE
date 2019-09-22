@@ -33,16 +33,31 @@ class Api::OrderItemsController < ApplicationController
   end
 
   def destroy
-    orderItemId = params[:id]
-    @order_item = OrderItem.includes(:order_items).where('id = ?', orderItemId).first
-    @order_items = @order_item.order_items
+    @order = Order.find_by(user_id: current_user.id)
+    orderId = @order.id
+    @order_items = OrderItem.where('order_id = ?', @order.id)
     
-    if @order_item
-      @order_item.destroy
-      @product_item = ProductItem.find_by(id: @order_item.product_item_id)
-      @product = Product.find_by(id: @product_item.product_id)
-      render 'api/order_items/index'
-    end
+
+    @order_item = OrderItem.find(params[:id])
+    @product_item = ProductItem.find_by(id: @order_item.product_item_id)
+    @product = Product.find_by(id: @product_item.product_id)
+    @order_item.destroy
+
+    
+    
+    render :show
+   
+
+    # orderItemId = params[:id]
+    # @order_item = OrderItem.includes(:order_items).where('id = ?', orderItemId).first
+    # @order_items = @order_item.order_items
+    
+    # if @order_item
+    #   @order_item.destroy
+    #   @product_item = ProductItem.find_by(id: @order_item.product_item_id)
+    #   @product = Product.find_by(id: @product_item.product_id)
+    #   render 'api/order_items/index'
+    # end
   end
 
   private

@@ -15,6 +15,7 @@ const orderItemsReducer = (oldState = {}, action) => {
       newState = Object.assign(newState, {[action.orderItem.id]: action.orderItem});
       return newState;
     case REMOVE_ORDER_ITEM:
+      newState = merge({}, oldState);
       delete newState[action.orderItemId];
       return newState;
     case RECEIVE_ORDER:

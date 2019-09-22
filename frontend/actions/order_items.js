@@ -13,7 +13,7 @@ export const receiveOrderItem = (response) => {
 export const removeOrderItem = (response) => {
   return ({
     type: REMOVE_ORDER_ITEM,
-    orderItemId: Object.keys(response.orderItems)
+    orderItemId: response.orderItems.id
   })
 }
 
