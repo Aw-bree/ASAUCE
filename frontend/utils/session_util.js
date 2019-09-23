@@ -9,3 +9,9 @@ export const deleteSession = () => $.ajax({
   method: 'DELETE'
 });
 
+export const fetchUser = (id) => (
+  $.ajax({
+    method: 'GET',
+    url: `api/users/${id}`
+  })
+)

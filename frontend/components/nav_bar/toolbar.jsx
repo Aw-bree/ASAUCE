@@ -7,7 +7,6 @@ class Toolbar extends React.Component {
   }
 
   render() {
-
     const display = this.props.currentUser ? (
       <section className="account-dropdown">
         <ul className="account-dropdown--auth">
@@ -16,7 +15,7 @@ class Toolbar extends React.Component {
         </ul>
         <ul className="account-dropdown--options">
           <p class-name="account-dropdown--option">My Account</p>
-          <a href={`#/orders/${this.props.orders.id}`} ><p class-name="account-dropdown--option">My Orders</p></a>
+          <a href={`#/orders/${this.props.currentUser.currentOrderId}`} ><p class-name="account-dropdown--option">My Orders</p></a>
           <p class-name="account-dropdown--option">Returns Information</p>
           <p class-name="account-dropdown--option">Contact Preferences</p>
         </ul>
@@ -71,7 +70,7 @@ class Toolbar extends React.Component {
               <button className="toolbar--profile--icons--icon" onClick={this.showMenu}><i className="fa fa-user" id="account-dropdown-button"></i></button>
               <i className="fa fa-heart" aria-hidden="true"></i>
               <i className="fa fa-shopping-bag" aria-hidden="true"></i>
-              <p>{this.props.orderItems.length}</p>
+              {/* <p>{this.props.orderItems.length}</p> */}
           </li>
           {display}
           

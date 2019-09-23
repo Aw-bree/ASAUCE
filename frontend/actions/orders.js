@@ -21,4 +21,7 @@ export const fetchOrder = (id) => dispatch => {
     .then(payload => dispatch(receiveOrder(payload)))
 }
 
+
+
+
 window.fetchOrder = fetchOrder

@@ -22,7 +22,6 @@ class Api::OrdersController < ApplicationController
 
   private
   def order_params
-
     params.require(:order).permit(:id, :user_id, :delivery_type, :state)
   end
 end

@@ -28,17 +28,6 @@ class Api::ProductItemsController < ApplicationController
     @product_item = ProductItem.find(params[:id])
     
     if @product_item.update(product_item_params)
-      render :index
-    else
-      render json: ['Try AGAIN'], status: 422
-    end
-  end
-
-  def update
-
-    @product_item = ProductItem.find(params[:id])
-
-    if @product_item.update(product_item_params)
       render :show
     else
       render json: ['Try AGAIN'], status: 422

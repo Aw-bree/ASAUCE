@@ -9,27 +9,29 @@ json.product do
 end
 
 json.product_items do 
-  @product_items.each do |product_item|
+  @product.product_items.each do |product_item|
     json.set! product_item.id do
       json.partial! 'api/product_items/product_item', product_item: product_item
     end
   end
 end
 
-@orders ||= {}
-json.orders do
-  json.id @orders.ids[0]
+@orders = current_user.orders
+json.orders do 
+  @orders.each do |order|
+    json.set! order.id do 
+      json.extract! order, :id, :user_id, :shipping_state
+    end
+  end
+  json.currentOrderId current_user.current_order[0].id
 end
 
-@orderItems ||= {}
-json.order_items do 
-  @order_items.each do |order_item|
+json.orderItems do 
+  @orders.last.order_items.each do |order_item|
     json.set! order_item.id do 
-      json.extract! order_item, :id, :order_id, :product_item_id
+      json.extract! order_item,  :id, :product_item_id, :order_id
     end
   end
 end
-
-
 
 

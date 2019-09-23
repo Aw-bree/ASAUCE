@@ -1,13 +1,13 @@
-import { postSession, deleteSession } from '../utils/session_util';
+import { postSession, deleteSession, fetchUser } from '../utils/session_util';
 
 export const RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
 export const LOGOUT_CURRENT_USER = 'LOGOUT_CURRENT_USER';
 export const RECEIVE_ERRORS = 'RECEIVE_ERRORS';
 export const CLEAR_ERRORS = 'CLEAR_ERRORS';
 
-const receiveCurrentUser = user => ({
+const receiveCurrentUser = payload => ({
   type: RECEIVE_CURRENT_USER,
-  user
+  user: payload
 });
 
 const logoutCurrentUser = () => ({
@@ -32,7 +32,12 @@ export const logout = () => dispatch => deleteSession()
   .then(() => dispatch(logoutCurrentUser())
 );
 
-export const fetchCurrentOrderId = (user) => dispatch => {
-  return OrderApiUtil.fetchCurrentOrderId(user)
-    .then(user => { return dispatch(receiveCurrentUser(user))})
-}
+export const requestUser = id => dispatch => fetchUser(id)
+  .then(user => dispatch(receiveCurrentUser(user)),
+    errors => dispatch(receiveErrors(errors.responseJSON))
+);
+
+// export const fetchCurrentOrderId = (user) => dispatch => {
+//   return OrderApiUtil.fetchCurrentOrderId(user)
+//     .then(user => { return dispatch(receiveCurrentUser(user))})
+// }

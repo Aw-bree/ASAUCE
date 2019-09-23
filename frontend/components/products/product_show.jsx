@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { selectOrderProductItemId } from '../../reducers/selectors';
 
 class ProductShow extends React.Component {
@@ -33,7 +32,6 @@ class ProductShow extends React.Component {
   }
 
   handleSubmit(e) {
-    debugger
     e.preventDefault();
     let product_item_id = selectOrderProductItemId(this.props.productItems, this.state.size);
     let productItem = {
@@ -42,7 +40,7 @@ class ProductShow extends React.Component {
       size: this.state.size,
       state: 'pending_order'
     };
-    let orderItem = { product_item_id: product_item_id, order_id: parseInt(this.props.orders.id) };
+    let orderItem = { product_item_id: product_item_id, order_id: this.props.orders.currentOrderId };
     let user = this.props.currentUser;
     this.props.createOrderItem(user, orderItem);
     this.props.updateProductItem(productItem);  
@@ -111,7 +109,7 @@ class ProductShow extends React.Component {
             <section className="product-show--cart-aside--form">
               <label className="product-show--cart-aside--form--sizing--label">
                 <select className="product-show--cart-aside--form--sizing" value={this.state.size} name="size" onChange={this.handleInput("size")}>
-                  <option className="dropdown-helper" selected disabled>Select a size</option>
+                  <option className="dropdown-helper" selected >Select a size</option>
                   {sizeOptions}
                 </select>
               </label>

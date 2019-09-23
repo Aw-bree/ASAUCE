@@ -24,7 +24,7 @@ class OrderShow extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
 
-    let orderItemId = e.target.attributes["orderItemId"].value;
+    let orderItemId = e.target.attributes["orderitemid"].value;
     let id = this.props.orderItems[orderItemId].product_item_id;
     let productId = [this.props.productItems[id].product_item_id].product_id;
     let productItem = {
@@ -65,7 +65,7 @@ class OrderShow extends React.Component {
               </ul>
             </ul>
           </section>
-          <button className="listing--remove--btn" orderItemId={listing.id} onClick={this.handleSubmit}>x</button>
+          <button className="listing--remove--btn" orderitemid={listing.id} onClick={this.handleSubmit}>x</button>
         </section>
       ))
     } else {

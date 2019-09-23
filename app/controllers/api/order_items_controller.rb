@@ -1,7 +1,6 @@
 class Api::OrderItemsController < ApplicationController
 
   def create
-
     @order_item = OrderItem.new(order_item_params)
 
     if @order_item.save
@@ -36,14 +35,11 @@ class Api::OrderItemsController < ApplicationController
     @order = Order.find_by(user_id: current_user.id)
     orderId = @order.id
     @order_items = OrderItem.where('order_id = ?', @order.id)
-    
 
     @order_item = OrderItem.find(params[:id])
     @product_item = ProductItem.find_by(id: @order_item.product_item_id)
     @product = Product.find_by(id: @product_item.product_id)
     @order_item.destroy
-
-    
     
     render :show
    
