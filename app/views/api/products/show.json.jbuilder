@@ -16,22 +16,26 @@ json.product_items do
   end
 end
 
-@orders = current_user.orders
-json.orders do 
-  @orders.each do |order|
-    json.set! order.id do 
-      json.extract! order, :id, :user_id, :shipping_state
+if !current_user.nil?
+  @orders = current_user.orders
+  json.orders do 
+    @orders.each do |order|
+      json.set! order.id do 
+        json.extract! order, :id, :user_id, :shipping_state
+      end
+    end
+    json.currentOrderId current_user.current_order[0].id
+  end
+
+  json.orderItems do 
+    @orders.last.order_items.each do |order_item|
+      json.set! order_item.id do 
+        json.extract! order_item,  :id, :product_item_id, :order_id
+      end
     end
   end
-  json.currentOrderId current_user.current_order[0].id
 end
 
-json.orderItems do 
-  @orders.last.order_items.each do |order_item|
-    json.set! order_item.id do 
-      json.extract! order_item,  :id, :product_item_id, :order_id
-    end
-  end
-end
+
 
 

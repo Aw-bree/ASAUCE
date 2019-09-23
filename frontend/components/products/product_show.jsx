@@ -47,7 +47,6 @@ class ProductShow extends React.Component {
   }
 
   render () {
-    console.log("rendering")
     const { product } = this.props;
     if (product === undefined) {return null}
     
@@ -60,7 +59,7 @@ class ProductShow extends React.Component {
 
     const sizeOptions = (
       this.props.selectedSizes.map((el) => {
-        if (el[1] > 0)  {
+      if (el[1] > 0)  {
           return <option key={el} className="size--available">{el[0]}</option>
         } else {
           return <option key={el} className="size--not-available" disabled>{el[0]}</option>

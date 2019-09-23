@@ -402,6 +402,8 @@ require 'json'
 # end
 
 ActiveRecord::Base.transaction do
+  ProductItem.destroy_all
+  
   products = Product.all
 
   products.each do |product|
