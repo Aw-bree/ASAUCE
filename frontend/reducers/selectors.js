@@ -2,6 +2,8 @@ export const selectSizeAvailability = ({ entities }) => {
   let items = Object.values(entities["productItems"]);
   let sizeAvailability = {};
 
+  sizeAvailability["Select a size"] = 0;
+
   for (let i = 0; i < items.length; i++) {
     let sz = items[`${i}`].size;
     if (sizeAvailability[`${i}`] === undefined) {
@@ -12,6 +14,7 @@ export const selectSizeAvailability = ({ entities }) => {
       sizeAvailability[`${sz}`] += 1;
     }
   }
+
   return sizeAvailability;
 }
 

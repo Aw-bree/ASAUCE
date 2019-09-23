@@ -7,7 +7,7 @@ class ProductShow extends React.Component {
 
     this.state = {
       productId: this.props.match.params.productId,
-      size: '',
+      size: 'Select a size',
     };
     
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -109,7 +109,6 @@ class ProductShow extends React.Component {
             <section className="product-show--cart-aside--form">
               <label className="product-show--cart-aside--form--sizing--label">
                 <select className="product-show--cart-aside--form--sizing" value={this.state.size} name="size" onChange={this.handleInput("size")}>
-                  <option className="dropdown-helper" selected >Select a size</option>
                   {sizeOptions}
                 </select>
               </label>
