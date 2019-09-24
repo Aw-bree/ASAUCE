@@ -29,7 +29,10 @@ class ProductShow extends React.Component {
 
   handleInput(type) {
     return (e) => {
-      this.setState({ [type]: e.target.value })
+      this.setState({
+        [type]: e.target.value,
+        sizeError: false
+      })
     };
   }
 
@@ -59,8 +62,8 @@ class ProductShow extends React.Component {
       };
       let orderItem = { product_item_id: product_item_id, order_id: this.props.orders.currentOrderId };
       
-      this.props.createOrderItem(user, orderItem).then
-        (this.props.updateProductItem(productItem));
+      this.props.createOrderItem(user, orderItem);
+      this.props.updateProductItem(productItem);
     }
   }
 
