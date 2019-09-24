@@ -8,6 +8,8 @@ class ProductShow extends React.Component {
     this.state = {
       productId: this.props.match.params.productId,
       size: 'Select a size',
+      currentUserError: false,
+      sizeError: false
     };
     
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -31,19 +33,35 @@ class ProductShow extends React.Component {
     };
   }
 
+  handleSizeError() {
+    return this.setState({ sizeError: false })
+  }
+
   handleSubmit(e) {
     e.preventDefault();
-    let product_item_id = selectOrderProductItemId(this.props.productItems, this.state.size);
-    let productItem = {
-      id: product_item_id,
-      product_id: this.state.productId,
-      size: this.state.size,
-      state: 'pending_order'
-    };
-    let orderItem = { product_item_id: product_item_id, order_id: this.props.orders.currentOrderId };
     let user = this.props.currentUser;
-    this.props.createOrderItem(user, orderItem);
-    this.props.updateProductItem(productItem);  
+
+    if (!user) {
+      this.setState({ currentUserError: true })
+    }
+
+    if (this.state.size === 'Select a size') {
+      this.setState({ sizeError: true })
+    }
+
+    if (user && !this.state.sizeError) {
+      let product_item_id = selectOrderProductItemId(this.props.productItems, this.state.size);
+      let productItem = {
+        id: product_item_id,
+        product_id: this.state.productId,
+        size: this.state.size,
+        state: 'pending_order'
+      };
+      let orderItem = { product_item_id: product_item_id, order_id: this.props.orders.currentOrderId };
+      
+      this.props.createOrderItem(user, orderItem).then
+        (this.props.updateProductItem(productItem));
+    }
   }
 
   render () {
@@ -55,7 +73,6 @@ class ProductShow extends React.Component {
       currency: 'USD',
       minimumFractionDigits: 2
     })
-
 
     const sizeOptions = (
       this.props.selectedSizes.map((el) => {
@@ -89,6 +106,24 @@ class ProductShow extends React.Component {
       </section>
     )
 
+    const currentUserError = (
+      (this.state.currentUserError) ? 
+        (
+          <section className="basic-error-box">
+            <p>Please sign in to add to your cart</p>
+          </section>
+        ) : null
+    )
+
+    const sizeError = (
+      (this.state.sizeError) ?
+        (
+          <section className="basic-error-box">
+            <p>Please select a size to add to your cart</p>
+          </section>
+        ) : null
+    )
+
     const asideArea = (
       <section className="product--show--cart-aside-wrapper">
         <section className="product-show--cart-aside">
@@ -111,6 +146,8 @@ class ProductShow extends React.Component {
                   {sizeOptions}
                 </select>
               </label>
+              {this.state.size === 'Select a size' ? sizeError : null}
+              {currentUserError}
               <button className="product-show--cart-aside--form--add-to-cart" onClick={this.handleSubmit}>ADD TO CART</button>
             </section>
           </ul>
