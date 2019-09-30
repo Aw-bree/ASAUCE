@@ -3,16 +3,20 @@ import ProductIndexItem from './product_index_item';
 import { Link } from 'react-router-dom';
 
 class ProductsIndex extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
   componentDidMount() {
     this.props.requestProducts();
   }
 
   render() {
-    
     let products = this.props.products.map(product => {
       return <ProductIndexItem key={product.id} product={product} />
     })
+
+    let productCount = products.length;
 
     return (
       <section className="listings">
@@ -31,7 +35,7 @@ class ProductsIndex extends React.Component {
 
           <section className="listings--wrapper--grid-wrapper">
             <section className="listings--count">
-              <h3>{'this is a style count holder'}</h3>
+              <h3>{productCount} styles found</h3>
             </section>
             <ul className="listings--products">
               {products}

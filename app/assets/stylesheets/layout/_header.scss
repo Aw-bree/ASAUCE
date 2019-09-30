@@ -28,13 +28,13 @@
 
 .shipping--icon {
   @include shipping-icon;
-    width: 16px;
-    height: 16px;
-    padding: 0px 17px;
-    align-content: center;
-    line-height: 100%;
-    align-items: center;
-    padding-top: 4.5px;
+  width: 16px;
+  height: 16px;
+  padding: 0px 17px;
+  align-content: center;
+  line-height: 100%;
+  align-items: center;
+  padding-top: 4.5px;
 }
 
 // toolbar
@@ -73,11 +73,11 @@
 
 .toolbar--business--logo {
   @include flex-item-perf-center;
-      width: 104px;
-    height: 30px;
-    margin-right: 24px;
-    padding-left: 30px;
-      display: flex;
+  width: 104px;
+  height: 30px;
+  margin-right: 24px;
+  padding-left: 48px;
+  display: flex;
 }
 
 .toolbar--search {
@@ -116,32 +116,23 @@
   padding-left: 0px;
 }
 
-// Below houses the account dropdown
 .toolbar--profile--icons {
   width: calc(100% / 1.5);
   color: $white-1;
   display: flex;
-  flex-direction: colunn;
-  align-items: center;
-  list-style-type: none;
-  justify-content: flex-start;
   margin-right: 20px;
   padding-left: 0px;
+  margin-top: 22px;
 
   i {
     @include flex-item-perf-center;
     text-shadow: 1px 1px 1px #ccc;
     font-size: 1.2em;
-    margin: 0px 12px;
-  }
-
-  button {
-    padding-top: 5px;
-    @include flex-item-perf-center;
-    scale: (.80,.80);
-    margin: 0px 12px;
+    margin: 0px 17px;
   }
 }
+
+// Account Dropdown
 
 .account-dropdown {
   @include col-top-left;
@@ -149,7 +140,7 @@
   position: absolute;
   top: 91px;
   right: 22px;
-  width: 202px;
+  width: 334px;
   background: $white-1;
   border: 1px solid $white-5;
   box-shadow: -2px 2px 4px 0 rgba(45,45,45,.14);
@@ -161,7 +152,6 @@
 }
 
 .account-dropdown--auth {
-  @include text-title-small;
   @include row-left-center;
   justify-content: flex-start;
   background-color: $white-2;
@@ -170,25 +160,22 @@
   margin-left: 0px;
   line-height: 50px;
   color: $grey-3;
-  padding-left: 0px;
+  padding-left: 5px;
   width: 100%;
 }
 
 .account-dropdown--auth--user {
-  font-weight: $weight-2;
+  font-weight: $weight-1;
   color: $grey-4;
-  padding-left: 0px;
-  @include text-body;
-  font-size: 11px;
+  font-size: 16px;
   letter-spacing: 1px;
   margin-left: 16px;
 }
 
 .account-dropdown--auth--logout {
   font-size: 14px;
-  @include text-title-small;
-  margin-left: 8px;
-  margin-right: 4px;
+  padding-left: 15px;
+  text-decoration: underline;
 }
 
 .account-dropdown--auth--auth-links {
@@ -196,7 +183,12 @@
   cursor: pointer;
   display: inline;
   text-decoration: underline;
-  padding-left: 18px;
+  padding-left: 10px;
+}
+
+.account-dropdown--auth--auth-seperator {
+  cursor: none;
+  padding-left: 10px;
 }
 
 .account-dropdown--options {
@@ -205,10 +197,17 @@
 }
 
 .account-dropdown--option {
-  // border-bottom: 1px solid $white-5;
+  padding-left: 20px;
+  font-size: 14px;
+  border-bottom: 1px solid $white-5;
+  width: 294px;
+}
+
+.account-dropdown--option-last {
   padding-left: 20px;
   font-size: 14px;
   border-bottom: none;
+  width: 294px;
 }
 
 

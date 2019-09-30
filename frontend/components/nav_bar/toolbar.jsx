@@ -11,49 +11,30 @@ class Toolbar extends React.Component {
       <section className="account-dropdown">
         <ul className="account-dropdown--auth">
           <p className="account-dropdown--auth--user">{`Hello ${this.props.currentUser.first_name}`}</p>
-          <button className="account-dropdown--auth--logout" onClick={this.props.logout}>Log Out!</button>
+          <button className="account-dropdown--auth--logout" onClick={this.props.logout}>Sign Out</button>
         </ul>
         <ul className="account-dropdown--options">
-          <p class-name="account-dropdown--option">My Account</p>
-          <a href={`#/orders/${this.props.currentUser.currentOrderId}`} ><p class-name="account-dropdown--option">My Orders</p></a>
-          <p class-name="account-dropdown--option">Returns Information</p>
-          <p class-name="account-dropdown--option">Contact Preferences</p>
+          <p className="account-dropdown--option">My Account</p>
+          <a href={`#/orders/${this.props.currentUser.currentOrderId}`} ><p className="account-dropdown--option">My Orders</p></a>
+          <p className="account-dropdown--option">Returns Information</p>
+          <p className="account-dropdown--option-last">Contact Preferences</p>
         </ul>
       </section>
     ) : (
         <section className="account-dropdown">
           <ul className="account-dropdown--auth">
             <p className="account-dropdown--auth--auth-links"><Link to="/signup">Sign Up</Link></p>
+            <p className="account-dropdown--auth--auth-seperator">|</p>
             <p className="account-dropdown--auth--auth-links"><Link to="/login">Log In</Link></p>
           </ul>
           <ul className="account-dropdown--options">
             <p className="account-dropdown--option">My Account</p>
             <p className="account-dropdown--option">My Orders</p>
             <p className="account-dropdown--option">Returns Information</p>
-            <p className="account-dropdown--option">Contact Preferences</p>
+            <p className="account-dropdown--option-last">Contact Preferences</p>
           </ul>
         </section>
     );
-    
-    // const bagDisplay = (
-    //   <section className="bag-dropdown">
-    //     <ul className="bag-dropdown--items">
-    //       <ul className="bag-header">
-    //         <h3 className="bag-header-text">My Cart</h3>
-    //       </ul>
-    //       <section className="bag-index">
-    //         <ul className="bag-index-items">
-    //           <li></li>
-    //         </ul>
-    //       </section>
-    //       <section className="bad-subtotal-wrapper">
-    //         <ul className="bag-subtotal-items">
-    //           <p className=""></p>
-    //         </ul>
-    //       </section>
-    //     </ul>
-    //   </section>
-    // )
 
     return (
       <section className="toolbar" >
@@ -63,17 +44,14 @@ class Toolbar extends React.Component {
           <li className="toolbar--busienss--item">MEN</li>
         </ul>
         <form className="toolbar--search">
-          {/* <input className="toolbar--search--input" type="text" value="search text" /> */}
         </form>
         <ul className="toolbar--profile">
           <li className="toolbar--profile--icons">
-              <button className="toolbar--profile--icons--icon" onClick={this.showMenu}><i className="fa fa-user" id="account-dropdown-button"></i></button>
+              <i className="fa fa-user" id="account-dropdown-button"></i>
               <i className="fa fa-heart" aria-hidden="true"></i>
               <i className="fa fa-shopping-bag" aria-hidden="true"></i>
-              {/* <p>{this.props.orderItems.length}</p> */}
           </li>
           {display}
-          
         </ul>
       </section>
     )
