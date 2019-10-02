@@ -1,13 +1,4 @@
 class Api::TagsController < ApplicationController
-  
-  def create
-    @tag = Tag.new(tag_params)
-    if @tag.save
-      render :json => @tag.to_json
-    else
-      render :json => { :errors => @tag.errors }
-    end
-  end
 
   def index
     @tags = Tag.all

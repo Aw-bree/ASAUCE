@@ -1,13 +1,4 @@
 class Api::ProductTagsController < ApplicationController
-  
-  def create
-    @product_tag = ProductTag.new(product_tag_params)
-    if @product_tag.save
-      render :json => @product_tag.to_json
-    else
-      render :json => { :errors => @product_tag.errors }
-    end
-  end
 
   def index
     @product_tags = ProductTag.all

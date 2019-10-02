@@ -22,7 +22,6 @@ class User < ApplicationRecord
   validates :password_digest, :session_token, :first_name, :last_name, presence: true
   validates :password, length: { minimum: 6 }, allow_nil: true
   validates_format_of :email, with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create
-  # got const validations from: https://stackoverflow.com/questions/12059415/rails-validate-in-model-that-value-is-inside-array
   validates :gender, :inclusion=> { :in => @gender }
   validates :country, :inclusion=> { :in => @countries }
 
@@ -35,7 +34,7 @@ class User < ApplicationRecord
 
   def self.find_by_credentials(email, password)
     user = User.find_by(email: email)
-    # this won't check the password unless it first found a user by that email
+    
     return nil unless user
     user.is_password?(password) ? user : nil
   end

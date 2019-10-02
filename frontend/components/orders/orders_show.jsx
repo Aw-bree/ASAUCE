@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { selectOrderItemListings } from '../../reducers/selectors';
 
 
 class OrderShow extends React.Component {
@@ -8,7 +6,7 @@ class OrderShow extends React.Component {
     super(props);
 
     this.state = {
-      orderId: this.props.match.params.orderId,
+      orderId: 0,
       subTotal: 0,
       listings: []
     };
@@ -19,6 +17,7 @@ class OrderShow extends React.Component {
   componentDidMount() {
     let orderId = parseInt(this.props.match.params.orderId);
     this.props.fetchOrder(orderId)
+    this.setState({orderId: orderId})
   }
 
   handleSubmit(e) {

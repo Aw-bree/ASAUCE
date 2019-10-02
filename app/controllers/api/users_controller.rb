@@ -2,6 +2,7 @@ class Api::UsersController < ApplicationController
   
   def create
     @user = User.new(user_params)
+    
     if @user.save
       login!(@user)
       create_order!(@user.id)
@@ -22,7 +23,7 @@ class Api::UsersController < ApplicationController
   end
   
   def user_params
-    params.require(:user).permit(:email, :password, :gender, :country, :email_lists, :date_of_birth, :first_name, :last_name)
+    params.require(:user).permit(:email, :password, :first_name)
   end
 end
 

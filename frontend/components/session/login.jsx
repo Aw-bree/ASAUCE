@@ -10,6 +10,7 @@ class Login extends React.Component {
     };
     
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemoSubmit = this.handleDemoSubmit.bind(this);
   }
 
   handleInput(type) {
@@ -20,27 +21,30 @@ class Login extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.login({email: 'demo@gmail.com', password: 'password'})
+    this.props.login({email: this.state.email, password: this.state.password})
       .then(() => this.props.history.push('/'));
   }
 
-  renderErrors() {
+  handleDemoSubmit(e) {
+    e.preventDefault();
+    this.props.login({ email: 'demo@gmail.com', password: 'password' })
+      .then(() => this.props.history.push('/'));
+  }
 
-    let errs = this.props.errors.map((error, i) => (
-      <li className="auth--form-error" key={i}>{error}</li>
-    ));
+  renderErrors(attribute) {
+    let fieldErrors = this.props.errors[attribute];
 
-    if (errs.length === 0) {
+    if (fieldErrors !== undefined) {
+      fieldErrors = fieldErrors.map((error, i) => (
+        <li className="auth--form-error" key={i}>{error}</li>
+      ));
+
       return (
-        <div></div>
+        <ul className="auth--login--form-errors">
+          {fieldErrors}
+        </ul>
       )
-    } 
-
-    return (
-      <ul className="auth--login--form-errors">
-        {errs}
-      </ul>
-    );
+    }
   }
 
   render() {
@@ -64,7 +68,7 @@ class Login extends React.Component {
               <h2 className="auth--title">SIGN IN WITH EMAIL</h2>
               
               <form className="auth--login-form">
-                {this.renderErrors()}
+                {this.renderErrors('invalid')}
                 <label className="auth--form-label">EMAIL ADDRESS:
                   <input className="auth--form-input"
                     type="text"
@@ -79,7 +83,8 @@ class Login extends React.Component {
                     onChange={this.handleInput('password')}
                   />
                 </label>
-                <button className="auth--button" onClick={this.handleSubmit}>Demo</button>
+                <button className="auth--button" onClick={this.handleSubmit}>Sign In</button>
+                <button className="auth--button" onClick={this.handleDemoSubmit}>Demo</button>
               </form>
               
               {/* <p className="auth--form-password-helper">Forgot password?</p> */}

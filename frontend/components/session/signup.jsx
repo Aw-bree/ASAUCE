@@ -31,18 +31,6 @@ class Signup extends React.Component {
       .then(() => this.props.history.push('/'));
   }
 
-  // renderErrors() {
-  //   let errs = this.props.errors.map((error, i) => (
-  //     <li className="auth--form-error" key={i}>{error}</li>
-  //   ));
-
-  //   return (
-  //     <ul className="auth--form-errors">
-  //       {errs}
-  //     </ul>
-  //   );
-  // }
-
   renderErrors(attribute) {
     let fieldErrors = this.props.errors[attribute];
 

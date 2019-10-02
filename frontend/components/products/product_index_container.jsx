@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import React from 'react';
 import { requestProducts } from '../../actions/products';
 import ProductsIndex from './product_index';
 
@@ -11,7 +10,7 @@ const mapStateToProps = ({ entities }) => {
 
 const mapDispatchToProps = dispatch => {
   return { 
-    requestProducts: () => dispatch(requestProducts()),
+    requestProducts: () => dispatch(requestProducts())
   }
 }
 

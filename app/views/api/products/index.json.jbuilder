@@ -1,3 +1,9 @@
+if @products.is_a?(ActiveRecord::Base)
+  @products = [@products]
+else
+  @products
+end
+
 @products.each do |product|
   json.set! product.id do
     json.partial! 'product', product: product

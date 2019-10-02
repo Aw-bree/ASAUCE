@@ -4,21 +4,20 @@ class Api::OrdersController < ApplicationController
     @order = Order.new({user_id: user_id})
 
     if @order.save
-      render json: ['Success!'], status: 200
+      render :json => @order.to_json
     else
-      render json: @order.errors.full_messages, status: 404
+      render json: @order.errors.messages, status: 404
     end
   end
 
   def show 
-    orderId = params[:id].to_s
-    @order = Order.includes(:order_items, :product_items, :products).where('id = ?', orderId).first
+    order_id = params[:id].to_s
+    @order = Order.includes(:order_items, :product_items, :products).where('id = ?', order_id).first
 
     if @order 
       render 'api/orders/show'
     end
   end
-
 
   private
   def order_params

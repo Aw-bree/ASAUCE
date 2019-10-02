@@ -1,6 +1,5 @@
 import React from 'react';
 import ProductIndexItem from './product_index_item';
-import { Link } from 'react-router-dom';
 
 class ProductsIndex extends React.Component {
   constructor(props) {
@@ -12,12 +11,11 @@ class ProductsIndex extends React.Component {
   }
 
   render() {
-    let products = this.props.products.map(product => {
-      return <ProductIndexItem key={product.id} product={product} />
+    const productsCount = this.props.products.length;
+    const products = this.props.products.map(product => {
+      return <ProductIndexItem key={product.id} product={product}/>
     })
-
-    let productCount = products.length;
-
+    
     return (
       <section className="listings">
         <section className="listings--category-banner">
@@ -25,17 +23,17 @@ class ProductsIndex extends React.Component {
         </section>
 
         <section className="listings--wrapper">
-          <section className="listings--filters-wrapper">
+          {/* <section className="listings--filters-wrapper">
             <ul className="listings--filters">
               <ul className="listings--filter--item">
                 <li className="listings--filters--item--options"></li>
               </ul>
             </ul>
-          </section>
+          </section> */}
 
           <section className="listings--wrapper--grid-wrapper">
             <section className="listings--count">
-              <h3>{productCount} styles found</h3>
+              <h3>{productsCount} styles found</h3>
             </section>
             <ul className="listings--products">
               {products}
