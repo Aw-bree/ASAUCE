@@ -6,8 +6,7 @@ import { fetchOrder } from '../../actions/order_actions';
 import { updateProductItem } from '../../actions/product_item_actions';
 import { deleteOrderItem } from '../../actions/order_item_actions';
 
-import { selectOrderItemListings } from '../../reducers/selectors';
-import { selectSubTotal } from '../../reducers/selectors';
+import { selectOrderItemListings, selectSubTotal } from '../../selectors/selectors';
 
 const mapStateToProps = (state, ownParams) => {
   let orderId = ownParams.match.params.orderId;

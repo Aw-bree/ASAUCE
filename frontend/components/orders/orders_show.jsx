@@ -105,8 +105,3 @@ class OrderShow extends React.Component {
 }
 
 export default OrderShow;
-
-
-// selectors: selectOrderItemsListings
-// [ {price: 20, brand: "some", color: "some", size: "XS", qty: 1, shortTitle: "some limited title", img: img_url} ]
-

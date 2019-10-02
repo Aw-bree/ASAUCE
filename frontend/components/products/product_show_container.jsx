@@ -6,7 +6,7 @@ import { requestProduct } from '../../actions/product_actions';
 import { createOrderItem } from '../../actions/order_item_actions';
 import { updateProductItem } from '../../actions/product_item_actions';
 
-import { selectSizeAvailability } from '../../reducers/selectors';
+import { selectSizeAvailability } from '../../selectors/selectors';
 
 const mapStateToProps = (state, ownParams) => {
   let productId = ownParams.match.params.productId;

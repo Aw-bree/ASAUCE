@@ -1,5 +1,5 @@
 import React from 'react';
-import { selectOrderProductItemId } from '../../reducers/selectors';
+import { selectOrderProductItemId } from '../../selectors/selectors';
 
 class ProductShow extends React.Component {
   constructor(props) {
