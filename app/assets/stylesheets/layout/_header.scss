@@ -138,17 +138,25 @@
   @include col-top-left;
   z-index: 99;
   position: absolute;
-  top: 91px;
+  top: 90px;
   right: 22px;
   width: 334px;
   background: $white-1;
-  border: 1px solid $white-5;
   box-shadow: -2px 2px 4px 0 rgba(45,45,45,.14);
-  display: none;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.25s ease-out; 
 }
 
 .toolbar--profile:hover .account-dropdown {
+  border: 1px solid $white-5;
   display: flex;
+  max-height: 250px;
+  -webkit-transition: max-height 0.3s ease-in;
+  -moz-transition: max-height 0.3s ease-in;
+  -o-transition: max-height 0.3s ease-in;
+  -ms-transition: max-height 0.3s ease-in;
+  transition: max-height 0.3s ease-in;
 }
 
 .account-dropdown--auth {
