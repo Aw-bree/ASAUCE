@@ -1,4 +1,4 @@
-import { postUser } from '../utils/signup_util';
+import { postUser } from '../utils/user_util';
 
 export const RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
 export const RECEIVE_SIGNUP_ERRORS = 'RECEIVE_SIGNUP_ERRORS';

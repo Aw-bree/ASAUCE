@@ -1,4 +1,4 @@
-import * as orderItemsApiUtil from '../utils/order_items_util';
+import * as orderItemsApiUtil from '../utils/order_item_util';
 
 export const RECEIVE_ORDER_ITEM = 'RECEIVE_ORDER_ITEM';
 export const REMOVE_ORDER_ITEM = "REMOVE_ORDER_ITEM";
