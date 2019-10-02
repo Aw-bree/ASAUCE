@@ -19,9 +19,7 @@ export const requestProducts = () => dispatch => (
 );
 
 export const requestProduct = (id) => dispatch => (
-  productAPIUtil.fetchProduct(id).then(product => {
-    dispatch(receiveProduct(product))
-    return product;
-  })
+  productAPIUtil.fetchProduct(id)
+  .then(product => dispatch(receiveProduct(product)))
 );
 

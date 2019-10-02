@@ -4,8 +4,9 @@ import {
   CLEAR_SESSION_ERRORS
 } from '../actions/session_actions';
 
-export default (state = [], action) => {
-  Object.freeze(state);
+export default (oldState = [], action) => {
+  Object.freeze(oldState);
+
   switch (action.type) {
     case RECEIVE_CURRENT_USER:
       return [];
@@ -14,6 +15,6 @@ export default (state = [], action) => {
     case CLEAR_SESSION_ERRORS:
       return [];
     default:
-      return state;
+      return oldState;
   }
 };

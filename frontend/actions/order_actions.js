@@ -20,8 +20,3 @@ export const fetchOrder = (id) => dispatch => {
   return orderApiUtil.fetchOrder(id)
     .then(payload => dispatch(receiveOrder(payload)))
 }
-
-
-
-
-window.fetchOrder = fetchOrder

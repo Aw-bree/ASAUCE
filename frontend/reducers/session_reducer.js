@@ -3,20 +3,21 @@ import {
   LOGOUT_CURRENT_USER
 } from '../actions/session_actions';
 
+import { merge } from 'lodash';
+
 const _nullSession = {
   currentUser: null
 };
 
-export default (state = _nullSession, action) => {
-  Object.freeze(state);
+export default (oldState = _nullSession, action) => {
+  Object.freeze(oldState);
   switch (action.type) {
     case RECEIVE_CURRENT_USER:
-      let currentUser;
-      currentUser = action.user;
-      return Object.assign({}, { currentUser });
+      newState = merge({}, oldState, action.user);
+      return newState;
     case LOGOUT_CURRENT_USER:
       return _nullSession;
     default:
-      return state;
+      return oldState;
   }
 };
