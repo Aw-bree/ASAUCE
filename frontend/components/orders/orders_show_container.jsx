@@ -1,9 +1,11 @@
-import React from 'react';
 import { connect } from 'react-redux';
-import { fetchOrder } from '../../actions/orders';
+
 import OrderShow from './orders_show';
-import { updateProductItem } from '../../actions/product_items';
-import { deleteOrderItem } from '../../actions/order_items';
+
+import { fetchOrder } from '../../actions/order_actions';
+import { updateProductItem } from '../../actions/product_item_actions';
+import { deleteOrderItem } from '../../actions/order_item_actions';
+
 import { selectOrderItemListings } from '../../reducers/selectors';
 import { selectSubTotal } from '../../reducers/selectors';
 

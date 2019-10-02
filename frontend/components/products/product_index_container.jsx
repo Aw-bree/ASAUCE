@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { requestProducts } from '../../actions/products';
+import { requestProducts } from '../../actions/product_actions';
 import ProductsIndex from './product_index';
 
 const mapStateToProps = ({ entities }) => {

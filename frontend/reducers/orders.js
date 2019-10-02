@@ -1,6 +1,7 @@
-import { RECEIVE_ORDER } from '../actions/orders';
-import { RECEIVE_PRODUCT } from '../actions/products';
-import { LOGOUT_CURRENT_USER } from '../actions/session';
+import { RECEIVE_ORDER } from '../actions/order_actions';
+import { RECEIVE_PRODUCT } from '../actions/product_actions';
+import { LOGOUT_CURRENT_USER } from '../actions/session_actions';
+
 import { merge } from 'lodash';
 
 const ordersReducer = (oldState = {}, action) => {

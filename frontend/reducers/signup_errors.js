@@ -1,4 +1,8 @@
-import { RECEIVE_CURRENT_USER, RECEIVE_SIGNUP_ERRORS, CLEAR_SIGNUP_ERRORS } from '../actions/signup';
+import {
+  RECEIVE_CURRENT_USER,
+  RECEIVE_SIGNUP_ERRORS,
+  CLEAR_SIGNUP_ERRORS
+} from '../actions/user_actions';
 
 export default (state = [], action) => {
   Object.freeze(state);

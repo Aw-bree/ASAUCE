@@ -1,12 +1,5 @@
-import {
-  RECEIVE_PRODUCTS,
-  RECEIVE_PRODUCT } from '../actions/products';
-import { RECEIVE_ORDER } from '../actions/orders';
-import { RECEIVE_ORDER_ITEM } from '../actions/order_items'
-import { merge } from 'lodash/merge';
-// window.fetchOrder = fetchOrder;
-// import { store } from 'react-redux';
-// window.store = store;
+import { RECEIVE_PRODUCTS, RECEIVE_PRODUCT } from '../actions/product_actions';
+import { RECEIVE_ORDER } from '../actions/order_actions';
 
 const productsReducer = (oldState = {}, action) => {
   Object.freeze(oldState);

@@ -1,9 +1,9 @@
-import { RECEIVE_ORDER_ITEM, REMOVE_ORDER_ITEM } from '../actions/order_items';
-import { RECEIVE_ORDER } from '../actions/orders';
-import { RECEIVE_PRODUCT } from '../actions/products';
-import { merge } from 'lodash';
-import { LOGOUT_CURRENT_USER } from '../actions/session';
+import { RECEIVE_ORDER_ITEM, REMOVE_ORDER_ITEM } from '../actions/order_item_actions';
+import { RECEIVE_ORDER } from '../actions/order_actions';
+import { RECEIVE_PRODUCT } from '../actions/product_actions';
+import { LOGOUT_CURRENT_USER } from '../actions/session_actions';
 
+import { merge } from 'lodash';
 
 const orderItemsReducer = (oldState = {}, action) => {
   let newState = Object.assign({}, oldState);

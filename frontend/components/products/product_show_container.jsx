@@ -1,8 +1,11 @@
 import { connect } from 'react-redux';
-import { requestProduct } from '../../actions/products';
-import { createOrderItem } from '../../actions/order_items';
-import { updateProductItem } from '../../actions/product_items';
+
 import ProductShow from './product_show';
+
+import { requestProduct } from '../../actions/product_actions';
+import { createOrderItem } from '../../actions/order_item_actions';
+import { updateProductItem } from '../../actions/product_item_actions';
+
 import { selectSizeAvailability } from '../../reducers/selectors';
 
 const mapStateToProps = (state, ownParams) => {

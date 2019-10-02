@@ -1,6 +1,6 @@
-import { RECEIVE_PRODUCT_ITEM, } from '../actions/product_items';
-import { RECEIVE_PRODUCT } from '../actions/products';
-import { RECEIVE_ORDER } from '../actions/orders';
+import { RECEIVE_PRODUCT_ITEM, } from '../actions/product_item_actions';
+import { RECEIVE_PRODUCT } from '../actions/product_actions';
+import { RECEIVE_ORDER } from '../actions/order_actions';
 
 import { merge } from 'lodash';
 
