@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProductIndexItem = ({ product }) => {
+export default ({ product }) => {
   const formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
@@ -18,5 +18,3 @@ const ProductIndexItem = ({ product }) => {
     </Link>
   )
 }
-
-export default ProductIndexItem;

@@ -19,12 +19,9 @@ const mapStateToProps = (state, ownParams) => {
     orderListItems: selectOrderItemListings(state.entities.orderItems, state.entities.products, state.entities.productItems),
     subTotal: selectSubTotal(state)
   }
-
-  
 }
 
 const mapDispatchToProps = dispatch => {
-
   return {
     fetchOrder: (id) => dispatch(fetchOrder(id)),
     deleteOrderItem: (id) => dispatch(deleteOrderItem(id)),

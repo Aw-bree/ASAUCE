@@ -4,7 +4,7 @@ import { LOGOUT_CURRENT_USER } from '../actions/session_actions';
 
 import { merge } from 'lodash';
 
-const ordersReducer = (oldState = {}, action) => {
+export default (oldState = {}, action) => {
   Object.freeze(oldState);
   let newState;
 
@@ -20,5 +20,3 @@ const ordersReducer = (oldState = {}, action) => {
       return oldState;
   }
 }
-
-export default ordersReducer;

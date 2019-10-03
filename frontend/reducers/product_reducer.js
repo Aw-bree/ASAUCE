@@ -3,7 +3,7 @@ import { RECEIVE_ORDER } from '../actions/order_actions';
 
 import { merge } from 'lodash';
 
-const productsReducer = (oldState = {}, action) => {
+export default (oldState = {}, action) => {
   Object.freeze(oldState);
   let newState;
 
@@ -21,5 +21,3 @@ const productsReducer = (oldState = {}, action) => {
       return oldState;
   }
 }
-
-export default productsReducer;
