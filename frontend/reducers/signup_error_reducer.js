@@ -1,7 +1,6 @@
 import {
   RECEIVE_CURRENT_USER,
-  RECEIVE_SIGNUP_ERRORS,
-  CLEAR_SIGNUP_ERRORS
+  RECEIVE_SIGNUP_ERRORS
 } from '../actions/user_actions';
 
 export default (oldState = [], action) => {
@@ -11,8 +10,6 @@ export default (oldState = [], action) => {
       return [];
     case RECEIVE_SIGNUP_ERRORS:
       return action.errors;
-    case CLEAR_SIGNUP_ERRORS:
-      return [];
     default:
       return oldState;
   }
