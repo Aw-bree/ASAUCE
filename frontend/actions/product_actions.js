@@ -3,9 +3,9 @@ export const RECEIVE_PRODUCTS = 'RECEIVE_PRODUCTS';
 export const RECEIVE_PRODUCT = 'RECEIVE_PRODUCT';
 
 
-export const receiveAllProducts = (products) => ({
+export const receiveAllProducts = (payload) => ({
   type: RECEIVE_PRODUCTS,
-  products
+  payload
 });
 
 export const receiveProduct = (payload) => ({

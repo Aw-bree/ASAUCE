@@ -8,6 +8,6 @@ class Api::AttributesController < ApplicationController
   private
 
   def attribute_params
-    params.require(:attribute).permit(:name)
+    params.require(:attribute).permit(:name, :data)
   end
 end

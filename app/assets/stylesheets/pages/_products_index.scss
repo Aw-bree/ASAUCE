@@ -17,15 +17,25 @@
 .listings--count, .listings--viewed {
   @include row-center;
   color: #999;
-  padding: 10px;
   line-height: 20px;
   list-style: none;
 
   h3 {
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: .5px;
     font-weight: normal;
   }
+}
+
+.listings--count {
+  h3 {
+    padding: 16px 0px 4px;
+    margin: 0px;
+  }
+}
+
+.listings--viewed {
+  padding: 0px 10px 0px 10px;
 }
 
 .listings--grid-wrapper {
@@ -75,14 +85,12 @@
 .listings--load-more {
   @include row-center;
 
-  h3 {
+  &-text {
     @include text-title-medium;
-    font-size: 20px;
+    font-size: 14px;
     color: #2d2d2d;
     border: 2px solid #ddd;
-    max-width: 300px;
-    padding: 15px;
-    margin: 16px;
-    width: 100%;
+    padding: 15px 80px 15px 80px;
+    margin: 0px 16px 20px 16px;
   }
 }

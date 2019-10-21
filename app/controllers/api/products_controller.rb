@@ -1,7 +1,11 @@
 class Api::ProductsController < ApplicationController
 
   def index
-    @products = Product.includes(:tags).limit(12).with_attached_photos
+    @products = Product.includes(:tags).with_attached_photos
+    render :index
+  end
+
+  def search
     render :index
   end
 

@@ -1,7 +1,7 @@
 // sass order source: https://gist.github.com/HugoGiraudel/8615243
 // Sass utilities
 @import "helpers/variables";
-@import "helpers/functions";
+// @import "helpers/functions";
 @import "helpers/mixins";
 
 // Vendors and external stylesheets
@@ -14,20 +14,19 @@
 
 // Layout related stylesheets
 
-@import "layout/header";
-@import "layout/footer";
+@import "layout/_header";
+@import "layout/_footer";
 @import "layout/_home_grid";
 @import "layout/_auth_forms";
 
 // Components and modules
-@import "components/carousel";
 @import "components/buttons";
-@import "components/dropdown";
 @import "components/errors";
+@import "components/productFilters";
 
 // Page-specific stylesheets
-@import "pages/home";
-@import "pages/contact";
+// @import "pages/home";
+// @import "pages/contact";
 @import "pages/products_show";
 @import "pages/products_index";
 @import "pages/orders_show";

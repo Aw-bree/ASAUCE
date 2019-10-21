@@ -6,6 +6,11 @@ json.product do
   json.category @product.tags.select { |tag| tag.tag_attribute.name ==  "Category" }.select { |cat| !cat.parent_tag_id }[0].name
   json.subCategory @product.tags.select { |tag| tag.tag_attribute.name ==  "Category" }.select { |cat| cat.parent_tag_id }[0].name
   json.color @product.tags.select { |tag| tag.tag_attribute.name ==  "Color" }[0].name
+  json.tags do
+    @product.tags.each do |tag|
+      json.set! tag.id, true
+    end 
+  end
 end
 
 json.product_items do 

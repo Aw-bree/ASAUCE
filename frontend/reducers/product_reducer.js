@@ -9,7 +9,7 @@ export default (oldState = {}, action) => {
 
   switch (action.type) {
     case RECEIVE_PRODUCTS:
-      newState = merge({}, newState, action.products);
+      newState = merge({}, newState, action.payload.products);
       return newState;
     case RECEIVE_PRODUCT:
       newState = merge({}, newState, { [action.payload.product.id]: action.payload.product });
