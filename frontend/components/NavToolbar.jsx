@@ -7,7 +7,9 @@ class NavToolbar extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchOrder(this.props.currentUser.currentOrderId);
+    if (this.props.currentUser) {
+      this.props.fetchOrder(this.props.currentUser.currentOrderId);
+    }
   }
 
   render() {
