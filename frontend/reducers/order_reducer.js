@@ -4,6 +4,7 @@ import { LOGOUT_CURRENT_USER } from '../actions/session_actions';
 
 import { merge } from 'lodash';
 
+
 export default (oldState = {}, action) => {
   Object.freeze(oldState);
   let newState;

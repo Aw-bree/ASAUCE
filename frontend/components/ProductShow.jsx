@@ -13,6 +13,7 @@ class ProductShow extends React.Component {
     };
     
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleScrollUp = this.handleScrollUp.bind(this);
   }
 
   componentDidMount() {
@@ -61,10 +62,18 @@ class ProductShow extends React.Component {
         state: 'pending_order'
       };
       let orderItem = { product_item_id: product_item_id, order_id: this.props.orders.currentOrderId };
-      
-      this.props.createOrderItem(user, orderItem);
-      this.props.updateProductItem(productItem);
+      this.props.createOrderItem(user, orderItem).then(
+        () => this.props.updateProductItem(productItem)
+      );
     }
+  }
+
+  handleScrollUp() {
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: 0
+    });
   }
 
   render () {
@@ -151,7 +160,7 @@ class ProductShow extends React.Component {
               </label>
               {this.state.size === 'Select a size' ? sizeError : null}
               {currentUserError}
-              <button className="product-show--cart-aside--form--add-to-cart" onClick={this.handleSubmit}>ADD TO CART</button>
+              <button className="product-show--cart-aside--form--add-to-cart" onClick={(e)=> {this.handleSubmit(e); this.handleScrollUp() }}>ADD TO CART</button>
             </section>
           </ul>
         </section>

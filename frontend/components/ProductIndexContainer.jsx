@@ -6,7 +6,6 @@ import { requestAttributes } from '../actions/attribute_actions';
 import ProductsIndex from './ProductIndex';
 
 const mapStateToProps = (state, ownProps) => {
-  debugger
   return {
     currentFilters: selectCurrentFilters(ownProps)
   }

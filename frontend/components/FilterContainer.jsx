@@ -8,7 +8,6 @@ import {
 import Filter from './Filter';
 
 const mapStateToProps = ({entities}, ownProps) => {
-  debugger
   return {
     filter: ownProps.filter,
     currentFilters: ownProps.currentFilters,

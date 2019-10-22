@@ -48,10 +48,12 @@ export const selectOrderProductItemId = (product_items, size) => {
 }
 
 export const selectOrderItemListings = (orderItems, products, productItems) => {
+  // debugger
   let array = Object.entries(orderItems)
   let result = [];
   if (array.length > 0) {
     result = array.map((orderItem) => {
+      // debugger
       return {
         id: orderItem[1].id,
         price: orderItem[1].unitPrice,

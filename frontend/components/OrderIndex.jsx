@@ -15,7 +15,9 @@ class OrderIndex extends React.Component {
 
   componentDidMount() {
     let orderId = parseInt(this.props.match.params.orderId);
-    this.props.fetchOrder(orderId)
+    debugger
+    this.props.fetchOrder(orderId);
+    // debugger
     this.setState({orderId: orderId})
   }
 

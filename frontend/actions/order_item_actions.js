@@ -17,7 +17,6 @@ export const removeOrderItem = (response) => {
   })
 }
 
-
 export const createOrderItem = (user, orderItem) => dispatch => {
   return orderItemsApiUtil.createOrderItem(user, orderItem)
     .then(response => dispatch(receiveOrderItem(response)));

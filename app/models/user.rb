@@ -59,6 +59,6 @@ class User < ApplicationRecord
   end
 
   def current_order
-    Order.select("MAX(id) AS id").where(:user_id => self.id)
+    Order.includes(:order_items).select("MAX(orders.id) AS id").where(:user_id => self.id)
   end
 end

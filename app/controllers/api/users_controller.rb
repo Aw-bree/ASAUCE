@@ -19,7 +19,7 @@ class Api::UsersController < ApplicationController
   private
   
   def selected_user
-    User.find(params[:id])
+    User.includes(:order_items).where(:id => params[:id])
   end
   
   def user_params

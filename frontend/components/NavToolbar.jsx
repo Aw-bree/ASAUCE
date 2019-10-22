@@ -6,6 +6,10 @@ class NavToolbar extends React.Component {
     super(props);
   }
 
+  componentDidMount() {
+    this.props.fetchOrder(this.props.currentUser.currentOrderId);
+  }
+
   render() {
     const display = this.props.currentUser ? (
       <section className="account-dropdown">
@@ -119,8 +123,8 @@ class NavToolbar extends React.Component {
             </svg>
           </li>
 
-          <div className="full-bag">
-            <p className="full-bag-count">1</p>
+          <div className={this.props.orderItemsCount > 0 ? "full-bag" : "empty-bag"}>
+            <p className={this.props.orderItemsCount > 0 ? "full-bag-count" : "empty-bag-count"}>{this.props.orderItemsCount}</p>
           </div>
             
         </ul>

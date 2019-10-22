@@ -27,7 +27,6 @@ export const selectCurrentFilters = (props) => {
   let currentFiltersAttributesArray = Object.keys(formattedFilters);
   currentFiltersAttributesArray.forEach(attributeName => {
     let attributeFiltersArray = formattedFilters[attributeName];
-    debugger
     attributeFiltersArray = Array.isArray(attributeFiltersArray) ? attributeFiltersArray : [attributeFiltersArray];
     attributeFiltersArray.forEach(filter => {
       if (formattedFilters[attributeName].constructor === String || Array.isArray(formattedFilters[attributeName])) {
@@ -117,7 +116,6 @@ export const toggleFilter = (filters, filterId, attributeName) => {
 }
 
 export const getFiltersQueryString = (filters) => {
-  debugger
   let attributes = Object.keys(filters);
   let newQueryArray = [];
 

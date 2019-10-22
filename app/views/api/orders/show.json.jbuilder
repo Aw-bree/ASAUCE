@@ -1,14 +1,13 @@
 @products = json.products do
-    @order.products.each do |product|
-      photoUrls = product.photos.map{ |picture| url_for(picture) } 
-      json.set! product.id do
-        json.extract! product, :id, :title, :price, :markdown
-        json.photoUrls product.photos.map { |file| url_for(file) }
-        json.tags do
-          product.tags.each do |tag|
-            json.set! tag.id, true
-          end 
-        end
+  @order.products.each do |product|
+    photoUrls = product.photos.map{ |picture| url_for(picture) } 
+    json.set! product.id do
+      json.extract! product, :id, :title, :price, :markdown
+      json.photoUrls product.photos.map { |file| url_for(file) }
+      json.tags do
+        product.tags.each do |tag|
+          json.set! tag.id, true
+        end 
       end
     end
   end
@@ -56,7 +55,7 @@ json.order do
   end
 end
 
-json.orderItems do 
+json.orderItems do
   @order.order_items.each do |item|
     json.set! item.id do 
       json.extract! item, :id, :order_id, :product_item_id
