@@ -15,9 +15,7 @@ class OrderIndex extends React.Component {
 
   componentDidMount() {
     let orderId = parseInt(this.props.match.params.orderId);
-    debugger
     this.props.fetchOrder(orderId);
-    // debugger
     this.setState({orderId: orderId})
   }
 
@@ -60,9 +58,9 @@ class OrderIndex extends React.Component {
               <p className="listing--details--brand">{listing.brand}</p>
               <p className="listing--title">{listing.shortTitle}</p>
               <ul className="listing--details--specs--wrapper">
-                <li className="listing--details--specs--color">Color</li>
+                <li className="listing--details--specs--color">{listing.color}</li>
                 <li className="listing--details--specs--size">{listing.size}</li>
-                <p className="listing--details--specs--qty">Qty</p>
+                {/* <p className="listing--details--specs--qty"></p> */}
               </ul>
             </ul>
           </section>
@@ -88,17 +86,19 @@ class OrderIndex extends React.Component {
                 <h3 className="order--listings--subtotal--price">{formatter.format(this.props.subTotal)}</h3>
               </ul>
             </section>
-            <ul className="order--delivery--wrapper">
-            </ul>
+            {/* <ul className="order--delivery--wrapper">
+            </ul> */}
           </ul>
-          <section className="order--aside">
-          </section>
+          {/* <section className="order--aside"></section> */}
         </ul>
       </section>
     )
 
     return (
+      <>
       <div className="order">{order}</div>
+      <div className="padding"></div>
+      </>
     )
   }
 }

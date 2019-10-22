@@ -16,4 +16,5 @@ class Order < ApplicationRecord
   has_many :order_items
   has_many :product_items, through: :order_items
   has_many :products, through: :product_items
+  has_many :tags, through: :products
 end

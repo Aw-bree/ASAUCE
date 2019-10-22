@@ -12,7 +12,7 @@ class Api::OrdersController < ApplicationController
 
   def show 
     order_id = params[:id].to_s
-    @order = Order.includes(:order_items, :product_items, :products).where('id = ?', order_id).first
+    @order = Order.includes(:order_items, :product_items, :products, :tags).where('id = ?', order_id).first
 
     if @order 
       render 'api/orders/show'

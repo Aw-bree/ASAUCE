@@ -48,19 +48,18 @@ export const selectOrderProductItemId = (product_items, size) => {
 }
 
 export const selectOrderItemListings = (orderItems, products, productItems) => {
-  // debugger
   let array = Object.entries(orderItems)
   let result = [];
   if (array.length > 0) {
     result = array.map((orderItem) => {
-      // debugger
+      let brand = products[productItems[orderItem[1].product_item_id].product_id].brand;
       return {
         id: orderItem[1].id,
         price: orderItem[1].unitPrice,
-        brand: "some",
-        color: "some",
+        brand: brand,
+        color: products[productItems[orderItem[1].product_item_id].product_id].color,
         size: productItems[orderItem[1].product_item_id].size,
-        shortTitle: products[productItems[orderItem[1].product_item_id].product_id].title,
+        shortTitle: products[productItems[orderItem[1].product_item_id].product_id].title.slice(brand.length),
         photosUrl: products[productItems[orderItem[1].product_item_id].product_id].photoUrls[0]
       }
     })

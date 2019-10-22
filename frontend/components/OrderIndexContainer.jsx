@@ -11,7 +11,6 @@ import { selectOrderItemListings, selectSubTotal } from '../selectors/selectors'
 const mapStateToProps = (state, ownParams) => {
   let orderId = ownParams.match.params.orderId;
 
-  // debugger
   return {
     orders: state.entities.orders[orderId],
     currentUser: state.session.currentUser,

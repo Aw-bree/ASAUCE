@@ -9,6 +9,8 @@
           json.set! tag.id, true
         end 
       end
+      json.brand product.tags.select { |tag| tag.tag_attribute.name ==  "Brand" }[0].name
+      json.color product.tags.select { |tag| tag.tag_attribute.name ==  "Color" }[0].name
     end
   end
 end
@@ -82,5 +84,7 @@ end
     json.photoUrls product.photos.map { |file| url_for(file) }
   end
 end
+
+
 
 
