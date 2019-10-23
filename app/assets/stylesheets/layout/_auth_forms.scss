@@ -7,9 +7,9 @@
 .auth--container {
   @include col-top-center;
   height: 90%;
-  margin: 0px;
+  margin: 20px 0px 20px 0px;
   width: 600px;
-  min-height: 800px;
+  // min-height: 800px;
   min-width: 650px;
   border-radius: 2px;
   background-color: $white-1;
@@ -17,7 +17,7 @@
 }
 
 .auth--header {
-  margin: 25px 25px 21px 26px;
+  margin: 25px 25px 0px 26px;
 }
 
 .auth--logo {
@@ -102,6 +102,7 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .auth--form--main--sign-up {
