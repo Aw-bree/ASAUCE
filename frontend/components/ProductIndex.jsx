@@ -15,6 +15,7 @@ class ProductIndex extends React.Component {
     this.filterProducts = this.filterProducts.bind(this);
     this.isFilterable = this.isFilterable.bind(this);
     this.isFilterableByAttribute = this.isFilterableByAttribute.bind(this);
+    this.handleScrollUp = this.handleScrollUp.bind(this);
   }
 
   componentDidMount() {
@@ -56,12 +57,20 @@ class ProductIndex extends React.Component {
     return filterIds.some(filterId => product.tags[filterId]);
   }
 
+  handleScrollUp() {
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: 0
+    });
+  }
+
   render() {
     let filteredProducts = this.state.products[1] ? this.filterProducts() : [];
     let seenCount = this.state.visible;
     let filteredProductsCount = filteredProducts.length;
     let visibleFilteredProducts = filteredProducts.slice(0, seenCount).map(product => {
-      return <ProductIndexItem key={product.id} product={product} />
+      return <ProductIndexItem key={product.id} product={product} handleScrollUp={this.handleScrollUp}/>
     })
 
     return (
@@ -70,7 +79,7 @@ class ProductIndex extends React.Component {
           <h2 className="listings--category-banner--text">{'Women\'s Clothing'}</h2>
         </section>
 
-        <FilterIndexContainer currentFilters={this.props.currentFilters}/>
+        <FilterIndexContainer currentFilters={this.props.currentFilters} />
 
         <section className="listings--wrapper">
           <section className="listings--wrapper--grid-wrapper">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default ({ product }) => {
+export default ({ product, handleScrollUp }) => {
   const formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
@@ -9,7 +9,7 @@ export default ({ product }) => {
   })
 
   return (
-    <Link to={`/products/${product.id}`}>
+    <Link to={`/products/${product.id}`} onClick={() => handleScrollUp()}>
       <li className="listings--product">
         <img className="listings--product-img" src={product.photoUrls[0]} alt=""></img>
         <p className="listings--product-title">{product.title}</p>
