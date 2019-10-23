@@ -101,6 +101,7 @@
 .ProductFilters__Item:hover,
 .ProductFilters__Item_state_active:hover {
   box-shadow: -2px 2px 2px 0 rgba(0,0,0,.09);
+  cursor: pointer;
 }
 
 .ProductFilters__Item_state_active {
