@@ -1,0 +1,2018 @@
+/* line 93, app/assets/stylesheets/helpers/_mixins.scss */
+.payment-icon {
+  width: 30px;
+  height: auto;
+  padding: 0px 17px;
+}
+
+/* line 99, app/assets/stylesheets/helpers/_mixins.scss */
+.social-icon {
+  width: 30px;
+  height: auto;
+  padding: 0px 17px;
+}
+
+/* line 1, app/assets/stylesheets/base/_reset.scss */
+html, body, section, article,
+h1, h2, p, strong, em, a, input,
+button {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+  list-style-type: none;
+  font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+  max-width: 100%;
+}
+
+/* line 20, app/assets/stylesheets/base/_reset.scss */
+html, body, #root, #app, #main {
+  height: 100%;
+  cursor: default;
+}
+
+/* line 25, app/assets/stylesheets/base/_reset.scss */
+div:focus {
+  display: none;
+}
+
+/* line 29, app/assets/stylesheets/base/_reset.scss */
+select:focus {
+  outline: none;
+}
+
+/* line 33, app/assets/stylesheets/base/_reset.scss */
+textarea:focus {
+  outline: none;
+}
+
+/* line 2, app/assets/stylesheets/layout/_header.scss */
+.ecom-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+  color: #f9f9f9;
+}
+
+/* line 8, app/assets/stylesheets/layout/_header.scss */
+.ecom--list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  margin-right: 33px;
+  border-right: 1px solid #ddd;
+}
+
+/* line 15, app/assets/stylesheets/layout/_header.scss */
+.ecom-list--item {
+  line-height: 30px;
+  padding: 0px 20px;
+  border-left: 1px solid #ddd;
+  font-size: 12px;
+  letter-spacing: .4px;
+  font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+  color: #666;
+}
+
+/* line 25, app/assets/stylesheets/layout/_header.scss */
+.ecom-list--item-img {
+  border-left: 1px solid #ddd;
+}
+
+/* line 29, app/assets/stylesheets/layout/_header.scss */
+.shipping--icon {
+  width: 18px;
+  height: 18px;
+  padding: 0px 17px;
+  width: 16px;
+  height: 16px;
+  padding: 0px 17px;
+  align-content: center;
+  line-height: 100%;
+  align-items: center;
+  padding-top: 4.5px;
+}
+
+/* line 41, app/assets/stylesheets/layout/_header.scss */
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2d2d;
+  height: 60px;
+}
+
+/* line 47, app/assets/stylesheets/layout/_header.scss */
+.toolbar--business {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 30%;
+  margin-right: 20px;
+  padding-left: 0px;
+}
+
+/* line 58, app/assets/stylesheets/layout/_header.scss */
+.toolbar--business--item,
+.toolbar--business--item-women {
+  height: inherit;
+  margin: 0px;
+  line-height: 99%;
+  font-size: .875rem;
+  font-family: futura-pt,sans-serif;
+  text-align: center;
+  color: #666;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: white;
+  padding: 24px 24px;
+  width: 65px;
+  border-style: border-box;
+}
+
+/* line 74, app/assets/stylesheets/layout/_header.scss */
+.toolbar--business--item-women {
+  background-color: #525050;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+}
+
+/* line 81, app/assets/stylesheets/layout/_header.scss */
+.toolbar--business--logo {
+  height: inherit;
+  margin: 0px;
+  width: 104px;
+  height: 30px;
+  margin-right: 24px;
+  padding-left: 48px;
+  display: flex;
+}
+
+/* line 90, app/assets/stylesheets/layout/_header.scss */
+.toolbar--search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 71.4285714286%;
+  width: calc(100% / 1.4);
+  line-height: 80px;
+  width: 705px;
+}
+
+/* line 97, app/assets/stylesheets/layout/_header.scss */
+.toolbar--search--input {
+  background-color: #fff;
+  color: #666;
+  width: 100%;
+  background-image: url("https://workofthefuture.mit.edu/themes/custom/wof/images/search.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 99%;
+  background-size: 25px 25px;
+  font-size: 1rem;
+  border: 0;
+  height: 38px;
+  border-radius: 19px/50%;
+  padding-left: 16px;
+  padding-right: 46px;
+  box-sizing: border-box;
+  color: #2d2d2d;
+  text-align: left;
+}
+
+/* line 118, app/assets/stylesheets/layout/_header.scss */
+.toolbar--profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 20px;
+  height: 100%;
+  line-height: 50px;
+  padding-left: 0px;
+}
+
+/* line 126, app/assets/stylesheets/layout/_header.scss */
+.toolbar--profile--icons {
+  color: #fff;
+  display: flex;
+  margin-right: 30px;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  width: 120px;
+}
+
+/* line 137, app/assets/stylesheets/layout/_header.scss */
+.toolbar--profile-icon {
+  height: inherit;
+  margin: 0px;
+  margin: 0px;
+  height: 19px;
+  padding: 21px 0px 21px 0px;
+}
+
+/* line 146, app/assets/stylesheets/layout/_header.scss */
+.account-dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 99;
+  position: absolute;
+  top: 90px;
+  right: 22px;
+  width: 334px;
+  background: #fff;
+  box-shadow: -2px 2px 4px 0 rgba(45, 45, 45, 0.14);
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.25s ease-out;
+}
+
+/* line 160, app/assets/stylesheets/layout/_header.scss */
+#account-dropdown-button:hover ~ .account-dropdown {
+  border: 1px solid #fff;
+  display: flex;
+  max-height: 270px;
+  -webkit-transition: max-height 0.3s ease-in;
+  -moz-transition: max-height 0.3s ease-in;
+  -o-transition: max-height 0.3s ease-in;
+  -ms-transition: max-height 0.3s ease-in;
+  transition: max-height 0.3s ease-in;
+}
+
+/* line 171, app/assets/stylesheets/layout/_header.scss */
+.account-dropdown:hover {
+  border: 1px solid #fff;
+  display: flex;
+  max-height: 270px;
+}
+
+/* line 177, app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--auth {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #eee;
+  height: 50px;
+  box-sizing: border-box;
+  margin-left: 0px;
+  line-height: 50px;
+  color: #666;
+  padding-left: 5px;
+  width: 100%;
+}
+
+/* line 190, app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--auth--user {
+  font-weight: bold;
+  color: #2d2d2d;
+  font-size: 16tpx;
+  letter-spacing: 1px;
+  margin-left: 16px;
+}
+
+/* line 198, app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--auth--logout {
+  font-size: 14px;
+  padding-left: 15px;
+  text-decoration: underline;
+}
+
+/* line 204, app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--auth--auth-links {
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  display: inline;
+  text-decoration: underline;
+  padding-left: 10px;
+}
+
+/* line 212, app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--auth--auth-links:hover {
+  color: #0770cf;
+}
+
+/* line 216, app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--auth--auth-seperator {
+  cursor: none;
+  padding-left: 10px;
+}
+
+/* line 221, app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+/* line 226, app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--option svg,
+.account-dropdown--option-last svg {
+  top: 5px;
+  position: relative;
+  margin-right: 16px;
+}
+
+/* line 233, app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--option,
+.account-dropdown--option-last {
+  padding-left: 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  width: 294px;
+  color: #2d2d2d;
+}
+
+/* line 242, app/assets/stylesheets/layout/_header.scss */
+.account-dropdown--option-last {
+  border-bottom: none;
+}
+
+/* line 246, app/assets/stylesheets/layout/_header.scss */
+#orders-link:hover {
+  color: #0770cf;
+  fill: #0770cf;
+}
+
+/* line 251, app/assets/stylesheets/layout/_header.scss */
+.full-bag {
+  position: relative;
+  z-index: 98;
+  top: -34px;
+  left: 102px;
+  background: white;
+  width: 17px;
+  height: 12px;
+}
+
+/* line 261, app/assets/stylesheets/layout/_header.scss */
+.full-bag-count {
+  width: 14px;
+  position: relative;
+  top: -19px;
+  left: 1px;
+  z-index: 108;
+  font-family: Futura;
+  color: black;
+  background: transparent;
+  font-size: 9px;
+  text-align: center;
+}
+
+/* line 274, app/assets/stylesheets/layout/_header.scss */
+.empty-bag {
+  display: none;
+}
+
+/* line 278, app/assets/stylesheets/layout/_header.scss */
+.empty-bag-count {
+  display: none;
+}
+
+/* line 284, app/assets/stylesheets/layout/_header.scss */
+.category-bar {
+  z-index: -2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #525050;
+  height: 50px;
+}
+
+/* line 291, app/assets/stylesheets/layout/_header.scss */
+.category-bar--options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: inherit;
+  width: 100%;
+  list-style: none;
+  padding: 0px 0px;
+  margin: 0px 30px;
+  align-content: left;
+  justify-content: flex-start;
+}
+
+/* line 304, app/assets/stylesheets/layout/_header.scss */
+.category-bar--option {
+  height: inherit;
+  margin: 0px;
+  color: white;
+  padding: 0px 10px;
+  font-weight: none;
+  text-align: center;
+  line-height: 50px;
+  border: none;
+  background-color: #525050;
+  margin: 0;
+  font-size: .875rem;
+  font-family: futura-pt,sans-serif;
+  font-size: 11px;
+  font-weight: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* line 321, app/assets/stylesheets/layout/_header.scss */
+.category-bar--option:hover, .category-bar--feature:hover {
+  background: #eee;
+  color: #2d2d2d;
+}
+
+/* line 326, app/assets/stylesheets/layout/_header.scss */
+.category-bar--feature:hover p {
+  color: #2d2d2d;
+}
+
+/* line 330, app/assets/stylesheets/layout/_header.scss */
+.category-bar--feature {
+  height: inherit;
+  margin: 0px;
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin-top: 42%;
+  background: #f20038;
+  position: relative;
+  top: -17px;
+  height: 50px;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  width: 70px;
+  margin: 17px 0px;
+}
+
+/* line 344, app/assets/stylesheets/layout/_header.scss */
+.category-bar--feature p {
+  color: white;
+  font-weight: none;
+  text-align: center;
+  line-height: 50px;
+  border: none;
+  font-size: .875rem;
+  font-family: futura-pt,sans-serif;
+  font-size: 11px;
+  font-weight: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* line 3, app/assets/stylesheets/layout/_footer.scss */
+.footer {
+  width: 100%;
+}
+
+/* line 7, app/assets/stylesheets/layout/_footer.scss */
+.footer {
+  position: relative;
+  bottom: 0px;
+}
+
+/* line 17, app/assets/stylesheets/layout/_footer.scss */
+.FooterEcom {
+  padding: 0px 32px 0px 32px;
+}
+
+/* line 21, app/assets/stylesheets/layout/_footer.scss */
+.FooterNavLinks__listItem, .FooterNavLinks__shipping {
+  line-height: 28px;
+}
+
+/* line 25, app/assets/stylesheets/layout/_footer.scss */
+.FooterEcom__Text, .FooterEcom__Text_type_copyright {
+  line-height: 50px;
+}
+
+/* line 29, app/assets/stylesheets/layout/_footer.scss */
+.FooterNavLinks {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+/* line 34, app/assets/stylesheets/layout/_footer.scss */
+.FooterIcons__List, .FooterNavLinks__list, .FooterNavLinks__shipping, .FooterEcom__List {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 40, app/assets/stylesheets/layout/_footer.scss */
+.FooterNavLinks__title {
+  margin: 0px 0px 10px 0px;
+}
+
+/* line 44, app/assets/stylesheets/layout/_footer.scss */
+.FooterNavLinks__shipping_icon {
+  height: 15px;
+  width: 15px;
+  margin: 6px 10px 0px 10px;
+}
+
+/* line 50, app/assets/stylesheets/layout/_footer.scss */
+.FooterIcons__Icon_type_social {
+  width: 30px;
+  margin: 20px 25px 20px 25px;
+}
+
+/* line 55, app/assets/stylesheets/layout/_footer.scss */
+.FooterIcons__Icon_type_payment {
+  width: 30px;
+  margin: 20px 20px 20px 20px;
+}
+
+/* line 60, app/assets/stylesheets/layout/_footer.scss */
+.FooterEcom__Text {
+  margin: 0px 6px 0px 6px;
+}
+
+/* line 69, app/assets/stylesheets/layout/_footer.scss */
+.FooterIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+/* line 74, app/assets/stylesheets/layout/_footer.scss */
+.FooterIcons__List {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-height: 50px;
+}
+
+/* line 80, app/assets/stylesheets/layout/_footer.scss */
+.FooterIcons__Icon_type_social {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+/* line 86, app/assets/stylesheets/layout/_footer.scss */
+.FooterIcons__Icon_type_payment {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* line 92, app/assets/stylesheets/layout/_footer.scss */
+.FooterIcons__Separator_type_vertical {
+  border-left: 1px solid grey;
+  height: 20px;
+  margin: 0px 25px 0px 25px;
+}
+
+/* line 102, app/assets/stylesheets/layout/_footer.scss */
+.FooterNavLinks {
+  padding: 28px 32px 28px 32px;
+  background: #eee;
+}
+
+/* line 112, app/assets/stylesheets/layout/_footer.scss */
+.FooterNavLinks__title {
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: #666;
+}
+
+/* line 118, app/assets/stylesheets/layout/_footer.scss */
+.FooterNavLinks__listItem {
+  font-size: 11px;
+  font-weight: none;
+  color: #666;
+}
+
+/* line 124, app/assets/stylesheets/layout/_footer.scss */
+.FooterNavLinks__shipping {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* line 130, app/assets/stylesheets/layout/_footer.scss */
+.FooterNavLinks__shipping_country {
+  font-size: 11px;
+  color: #666;
+}
+
+/* line 135, app/assets/stylesheets/layout/_footer.scss */
+.FooterNavLinks__shipping_change {
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: #666;
+}
+
+/* line 144, app/assets/stylesheets/layout/_footer.scss */
+.FooterEcom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #ddd;
+}
+
+/* line 150, app/assets/stylesheets/layout/_footer.scss */
+.FooterEcom__List {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* line 155, app/assets/stylesheets/layout/_footer.scss */
+.FooterEcom__Text {
+  font-size: 11px;
+  color: #666;
+}
+
+/* line 162, app/assets/stylesheets/layout/_footer.scss */
+.FooterEcom__Text_type_copyright {
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  color: #666;
+}
+
+/* line 169, app/assets/stylesheets/layout/_footer.scss */
+.FooterEcom__Separator_type_vertical {
+  border-left: 1px solid grey;
+  height: 10px;
+  margin: 0px 6px 0px 6px;
+}
+
+@media screen and (min-width: 700px) {
+  @supports (display: flex) {
+    /* line 7, app/assets/stylesheets/layout/_home_grid.scss */
+    .home--feature ul,
+    .home--style-feed-carousel ul,
+    .home--double--feature ul,
+    .home--category-carousel ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-left: 0px;
+      list-style: none;
+    }
+    /* line 18, app/assets/stylesheets/layout/_home_grid.scss */
+    .home--feature--item,
+    .home--double-feature--item {
+      width: 100%;
+    }
+    /* line 23, app/assets/stylesheets/layout/_home_grid.scss */
+    .home--double--feature {
+      margin: 4% 1% 4% 1%;
+    }
+    /* line 27, app/assets/stylesheets/layout/_home_grid.scss */
+    .home--double-feature--item {
+      margin: 0px 2% 0px 2%;
+    }
+    /* line 31, app/assets/stylesheets/layout/_home_grid.scss */
+    .home--style-feed-carousel--item,
+    .home--category-carousel--list--item {
+      width: 40%;
+      list-style-type: none;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  @supports (display: grid) {
+    /* line 43, app/assets/stylesheets/layout/_home_grid.scss */
+    .home {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 40px;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    /* line 53, app/assets/stylesheets/layout/_home_grid.scss */
+    .home img {
+      display: block;
+      border: 0;
+      width: 100%;
+      height: auto;
+    }
+    /* line 60, app/assets/stylesheets/layout/_home_grid.scss */
+    .home .home--feature-img {
+      width: 95%;
+      margin: auto;
+    }
+    /* line 65, app/assets/stylesheets/layout/_home_grid.scss */
+    .home .home--banner--img {
+      width: 100%;
+      cursor: default;
+    }
+    /* line 70, app/assets/stylesheets/layout/_home_grid.scss */
+    .home .home--double-feature--item--img {
+      width: 70%;
+      margin: auto;
+    }
+    /* line 75, app/assets/stylesheets/layout/_home_grid.scss */
+    .home .home--banner-bar {
+      border-bottom: 1px solid #ddd;
+    }
+    /* line 79, app/assets/stylesheets/layout/_home_grid.scss */
+    .home .home--double--feature ul {
+      display: flex;
+      flex-direction: row;
+    }
+    /* line 85, app/assets/stylesheets/layout/_home_grid.scss */
+    .home--banner,
+    .home--banner-img,
+    .home--category-carousel,
+    .home--style-feed,
+    .home--feature,
+    .home--double-feature,
+    .home--feature ul {
+      grid-column: 1/3;
+    }
+  }
+}
+
+/* line 98, app/assets/stylesheets/layout/_home_grid.scss */
+.home {
+  position: relative;
+  z-index: -2;
+}
+
+/* line 103, app/assets/stylesheets/layout/_home_grid.scss */
+.home--banner-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  background: #EA92B2;
+}
+
+/* line 109, app/assets/stylesheets/layout/_home_grid.scss */
+.home--banner-bar--item {
+  width: 100px;
+  height: 28px;
+  margin: 30px;
+  border: 2px solid black;
+  text-align: center;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+/* line 119, app/assets/stylesheets/layout/_home_grid.scss */
+.home--large-feature-title {
+  font-size: 50px;
+  line-height: 36px;
+  font-weight: bolder;
+  letter-spacing: 1.2px;
+  margin-bottom: 29px;
+}
+
+/* line 124, app/assets/stylesheets/layout/_home_grid.scss */
+.home--feature--buttons {
+  position: absolute;
+  top: 12%;
+  left: 39%;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+}
+
+/* line 132, app/assets/stylesheets/layout/_home_grid.scss */
+.home--feature--buttons a {
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+
+/* line 139, app/assets/stylesheets/layout/_home_grid.scss */
+.home--style-feed-title {
+  font-size: 14px;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  color: #222;
+}
+
+/* line 144, app/assets/stylesheets/layout/_home_grid.scss */
+.home--style-feed-body {
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: #666;
+}
+
+/* line 149, app/assets/stylesheets/layout/_home_grid.scss */
+.home--style-feed-date {
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 9px;
+  color: #2d2d2d;
+}
+
+/* line 155, app/assets/stylesheets/layout/_home_grid.scss */
+.home--double-feature--item {
+  padding-left: 0px;
+}
+
+/* line 159, app/assets/stylesheets/layout/_home_grid.scss */
+.margin-25 {
+  margin: 25px;
+  width: 100%;
+}
+
+/* line 164, app/assets/stylesheets/layout/_home_grid.scss */
+.home--double--feature {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+/* line 170, app/assets/stylesheets/layout/_home_grid.scss */
+.home--double--feature ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+/* line 190, app/assets/stylesheets/layout/_home_grid.scss */
+.home--carousel-list {
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* line 195, app/assets/stylesheets/layout/_home_grid.scss */
+.home--style-feed-carousel a {
+  cursor: default;
+}
+
+/* line 1, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-color: #eee;
+  min-height: 800px;
+}
+
+/* line 7, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: 90%;
+  margin: 20px 0px 20px 0px;
+  width: 600px;
+  min-width: 650px;
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 0px;
+}
+
+/* line 19, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--header {
+  margin: 25px 25px 0px 26px;
+}
+
+/* line 23, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--logo {
+  margin: 25px;
+  width: 95px;
+  height: 28px;
+  background: #fff;
+}
+
+/* line 30, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--register {
+  height: 62px;
+  width: 99%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 25px 25px 15px 25px;
+}
+
+/* line 41, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--register--options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  width: 100%;
+  padding: 1px 0px 0px 0px;
+}
+
+/* line 48, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--register--not-selected-left, .auth--register--not-selected-right,
+.auth--register--selected-left, .auth--register--selected-right {
+  text-decoration: none;
+  font-family: futura-pt, Tahoma, Geneva, Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13.4px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* line 59, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--register--not-selected-right {
+  width: 100%;
+  border-bottom: 1px solid #999;
+  margin-right: 22px;
+  line-height: 59px;
+  padding-left: 2px;
+}
+
+/* line 67, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--register--not-selected-left {
+  width: 100%;
+  border-bottom: 1px solid #999;
+  margin-left: 17px;
+  line-height: 59px;
+  padding-right: 1px;
+}
+
+/* line 75, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--register--selected-right {
+  width: 100%;
+  border: 1px solid #999;
+  border-bottom: none;
+  margin-right: 17px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+/* line 84, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--register--selected-left {
+  width: 100%;
+  border: 1px solid #999;
+  border-bottom: none;
+  margin-left: 22px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+/* line 93, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 650px;
+  min-height: 500px;
+  background-color: #fff;
+}
+
+/* line 100, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form--main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* line 108, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form--main--sign-up {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 500px;
+  width: 80%;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+/* line 118, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 63%;
+  padding: 0 18.5%;
+}
+
+/* line 125, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--signin-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+/* line 130, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--title {
+  font-size: 14px;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  color: #222;
+  margin: 18px;
+}
+
+/* line 136, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-label {
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  height: inherit;
+  margin: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #999;
+  width: 90%;
+  line-height: 1.7;
+  position: relative;
+}
+
+/* line 147, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-input, .auth--form-input-password {
+  display: flex;
+  justify-content: center;
+  height: 43px;
+  margin-top: 11px;
+  margin-bottom: 19px;
+  border: 1px solid #999;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  color: black;
+  width: 96%;
+}
+
+/* line 162, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-subtitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 167, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--button {
+  font-size: 14px;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  font-size: 14px;
+  line-height: 45px;
+  min-width: 200px;
+  width: 76.5%;
+  height: 45px;
+  border: 0px;
+  background: #2d2d2d;
+  color: #fff;
+  height: inherit;
+  margin: 0px;
+  text-align: center;
+  margin: 10px 10%;
+}
+
+/* line 182, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--button:hover {
+  opacity: .65;
+}
+
+/* line 186, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-input-password {
+  letter-spacing: 8px;
+}
+
+/* line 190, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-password-helper {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* line 200, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-errors {
+  list-style: none;
+  font-family: "futura-pt",Tahoma,Geneva,Verdana,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: .4px;
+  background-color: #fae7ec;
+  border: 2px solid #ce1948;
+  padding: 0;
+  width: 342px;
+  position: absolute;
+  bottom: -5px;
+  left: 169px;
+  box-sizing: border-box;
+}
+
+/* line 218, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--form-error {
+  padding: 5px 10px;
+  z-index: 10;
+  display: block;
+  background-color: #fae7ec;
+  font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: .4px;
+  color: black;
+  text-transform: capitalize;
+}
+
+/* line 233, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--login--form-errors {
+  list-style: none;
+  font-family: "futura-pt",Tahoma,Geneva,Verdana,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: .4px;
+  background-color: #fae7ec;
+  border: 2px solid #ce1948;
+  padding: 0;
+  width: 342px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* line 249, app/assets/stylesheets/layout/_auth_forms.scss */
+.arrow-down {
+  position: absolute;
+  left: 10px;
+  bottom: -15px;
+  content: " ";
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 15px solid #ce1948;
+  height: 0;
+  width: 0;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  z-index: 1;
+}
+
+/* line 265, app/assets/stylesheets/layout/_auth_forms.scss */
+.arrow-down-2 {
+  position: absolute;
+  left: 10px;
+  bottom: -12px;
+  content: " ";
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 15px solid #fae7ec;
+  height: 0;
+  width: 0;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  z-index: 2;
+}
+
+/* line 281, app/assets/stylesheets/layout/_auth_forms.scss */
+.arrow-down-2 {
+  position: absolute;
+  left: 10px;
+  bottom: -12px;
+  content: " ";
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 15px solid #fae7ec;
+  height: 0;
+  width: 0;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  z-index: 2;
+}
+
+/* line 297, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--fieldset {
+  display: inline-block;
+  border: none;
+}
+
+/* line 302, app/assets/stylesheets/layout/_auth_forms.scss */
+.auth--fieldset-label {
+  width: 70%;
+}
+
+/* line 1, app/assets/stylesheets/components/_buttons.scss */
+.general-btn {
+  box-sizing: border-box;
+  border: 2px solid black;
+  padding: 9px 20px;
+  text-align: center;
+  line-height: 39px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* line 12, app/assets/stylesheets/components/_buttons.scss */
+.style-feed-btn {
+  background: #fff;
+  box-sizing: border-box;
+  padding: 9px 20px;
+  text-align: center;
+  line-height: 39px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* line 23, app/assets/stylesheets/components/_buttons.scss */
+.btn--view-all {
+  background: black;
+  padding: 35px 8px;
+  border-radius: 50%;
+  color: white;
+  top: 25%;
+  position: relative;
+}
+
+/* line 1, app/assets/stylesheets/components/_errors.scss */
+.basic-error-box {
+  background-color: #FAE7EC;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 10px 0px 10px 0px;
+}
+
+/* line 1, app/assets/stylesheets/components/_productFilters.scss */
+.ProductFilters {
+  padding: 10px 30px 0px 30px;
+  background: #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* line 8, app/assets/stylesheets/components/_productFilters.scss */
+.ProductFilters__Group {
+  min-width: 192px;
+  margin: 0px 10px 18px 10px;
+}
+
+/* line 13, app/assets/stylesheets/components/_productFilters.scss */
+.ProductFilters__List {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  z-index: 99;
+  margin: 0px;
+  padding: 0px;
+  overflow: scroll;
+  width: 340px;
+  max-height: 258px;
+  display: none;
+  background: #eee;
+}
+
+/* line 26, app/assets/stylesheets/components/_productFilters.scss */
+.ProductFilters__Group:hover .ProductFilters__List {
+  display: flex;
+}
+
+/* line 30, app/assets/stylesheets/components/_productFilters.scss */
+.ProductFilters__Group:hover .ProductFilters__Text_type_title h3,
+.ProductFilters__Group:hover .ProductFilters__Text_type_title path {
+  color: #0770cf;
+  fill: #0770cf;
+}
+
+/* line 36, app/assets/stylesheets/components/_productFilters.scss */
+.ProductFilters__Text_type_title, .ProductFilters__Text_type_activeTitle {
+  width: 100%;
+  border-radius: 0;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-left: none;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 45, app/assets/stylesheets/components/_productFilters.scss */
+.ProductFilters__Text_type_title h3, .ProductFilters__Text_type_activeTitle h3 {
+  font-family: futura-pt,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .3px;
+  color: #666;
+  text-align: left;
+  line-height: 42px;
+  height: 42px;
+  margin: 0px;
+  padding: 0px 8px 0px 8px;
+}
+
+/* line 58, app/assets/stylesheets/components/_productFilters.scss */
+.ProductFilters__Text_type_title svg, .ProductFilters__Text_type_activeTitle svg {
+  padding: 0px 8px 0px 0px;
+}
+
+/* line 63, app/assets/stylesheets/components/_productFilters.scss */
+.ProductFilters__Text_type_activeTitle {
+  border-top: 2px solid #0770cf;
+}
+
+/* line 67, app/assets/stylesheets/components/_productFilters.scss */
+.ProductFilters__Header {
+  text-align: left;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  min-height: 50px;
+}
+
+/* line 78, app/assets/stylesheets/components/_productFilters.scss */
+.ProductFilters__Header p {
+  font-size: 12px;
+  letter-spacing: .4px;
+  line-height: 1.57;
+  color: #2d2d2d;
+}
+
+/* line 86, app/assets/stylesheets/components/_productFilters.scss */
+.ProductFilters__Item,
+.ProductFilters__Item_state_active {
+  width: 95%;
+  margin: 4px 8px;
+  padding: 14px;
+  box-sizing: border-box;
+  font-family: futura-pt,sans-serif;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 400;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #2d2d2d;
+}
+
+/* line 101, app/assets/stylesheets/components/_productFilters.scss */
+.ProductFilters__Item:hover,
+.ProductFilters__Item_state_active:hover {
+  box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+}
+
+/* line 107, app/assets/stylesheets/components/_productFilters.scss */
+.ProductFilters__Item_state_active {
+  background: #0770cf;
+  color: white;
+}
+
+/* line 2, app/assets/stylesheets/pages/_products_show.scss */
+.product-show {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 8, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* line 12, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--photos-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-items: flex-start;
+}
+
+/* line 17, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--photos-aside-wrapper {
+  margin: 35px;
+}
+
+/* line 21, app/assets/stylesheets/pages/_products_show.scss */
+.product--show--cart-aside-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-items: flex-start;
+  width: 33%;
+}
+
+/* line 27, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--detail-wrapper,
+.product-show--deatil-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 33, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--deatil--items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  align-items: flex-start;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+/* line 41, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--detail--item {
+  text-align: left;
+  margin: 0px;
+}
+
+/* line 45, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--detail--item ul, .product-show--detail--item li, .product-show--detail--item p, .product-show--detail--item h3 {
+  list-style: none;
+  text-align: left;
+  padding: 0px;
+}
+
+/* line 55, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--aside--photos {
+  list-style-type: none;
+}
+
+/* line 59, app/assets/stylesheets/pages/_products_show.scss */
+.listings--product--show--img {
+  width: 100%;
+  max-width: 65px;
+  margin: 15px;
+}
+
+/* line 67, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside {
+  width: 90%;
+  text-align: left;
+}
+
+/* line 72, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside-items--title {
+  width: 70%;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  font: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  word-wrap: break-word;
+  color: #666;
+  letter-spacing: 1.4px;
+  text-transform: none;
+}
+
+/* line 85, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside-items--price-wrapper,
+.product-show--cart-aside-items--color-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0px;
+}
+
+/* line 95, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside-items--price {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bolder;
+  letter-spacing: 1.2px;
+  padding-right: 15px;
+  color: #2d2d2d;
+}
+
+/* line 101, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside-items--shipping {
+  line-height: 36px;
+  text-decoration-line: underline;
+  color: #666;
+}
+
+/* line 107, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside-items--color-title {
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  padding-right: 15px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* line 115, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside-items--color {
+  margin-top: 30px;
+  color: #2d2d2d;
+}
+
+/* line 120, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside--form {
+  list-style: none;
+  margin-top: 30px;
+}
+
+/* line 126, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--detail--item p, .product-show--detail--item li {
+  padding: 5px;
+  color: #2d2d2d;
+}
+
+/* line 132, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--detail--item--title {
+  font-size: 14px;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  color: #666;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* line 141, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside--form--sizing {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  width: 220px;
+  height: 40px;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 400 11px system-ui;
+  border-radius: none;
+  -webkit-appearance: menulist;
+  box-sizing: border-box;
+  align-items: center;
+  white-space: pre;
+  -webkit-rtl-ordering: logical;
+  color: black;
+  background-color: #f8f8f8;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a6a6a6;
+  border-image: initial;
+  overflow: visible !important;
+}
+
+/* line 176, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside--form--add-to-cart {
+  width: 100%;
+  float: left;
+  background-color: #00AA5B;
+  display: table;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  height: 40px;
+  text-transform: uppercase;
+  padding-top: 1px;
+  margin-top: 28px;
+}
+
+/* line 190, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside--form--add-to-cart:hover {
+  background-color: #00802b;
+}
+
+/* line 194, app/assets/stylesheets/pages/_products_show.scss */
+.product-show--cart-aside--form--add-to-cart:focus {
+  box-shadow: 0 0 5px #51cbee;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #51cbee;
+}
+
+/* line 1, app/assets/stylesheets/pages/_products_index.scss */
+.listings--category-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 82px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+/* line 9, app/assets/stylesheets/pages/_products_index.scss */
+.listings--category-banner--text {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bolder;
+  letter-spacing: 1.2px;
+}
+
+/* line 13, app/assets/stylesheets/pages/_products_index.scss */
+.listings--filter--item {
+  list-style: none;
+}
+
+/* line 17, app/assets/stylesheets/pages/_products_index.scss */
+.listings--count, .listings--viewed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #999;
+  line-height: 20px;
+  list-style: none;
+}
+
+/* line 23, app/assets/stylesheets/pages/_products_index.scss */
+.listings--count h3, .listings--viewed h3 {
+  font-size: 14px;
+  letter-spacing: .5px;
+  font-weight: normal;
+}
+
+/* line 31, app/assets/stylesheets/pages/_products_index.scss */
+.listings--count h3 {
+  padding: 16px 0px 4px;
+  margin: 0px;
+}
+
+/* line 37, app/assets/stylesheets/pages/_products_index.scss */
+.listings--viewed {
+  padding: 0px 10px 0px 10px;
+}
+
+/* line 41, app/assets/stylesheets/pages/_products_index.scss */
+.listings--grid-wrapper {
+  background-color: #FFFFFF;
+}
+
+/* line 45, app/assets/stylesheets/pages/_products_index.scss */
+.listings--products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* line 54, app/assets/stylesheets/pages/_products_index.scss */
+.listings--product {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+/* line 60, app/assets/stylesheets/pages/_products_index.scss */
+.listings--product-img {
+  width: 300px;
+}
+
+/* line 64, app/assets/stylesheets/pages/_products_index.scss */
+.listings--product-title {
+  width: 300px;
+  height: 30px;
+  margin: 18px 0px;
+  word-wrap: break-word;
+  line-height: 30px;
+  font-size: 1rem;
+  color: #2d2d2d;
+  letter-spacing: 0.4px;
+  font: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* line 77, app/assets/stylesheets/pages/_products_index.scss */
+.listings--product-price {
+  width: 300px;
+  font-weight: bolder;
+  color: #666;
+  letter-spacing: 2px;
+  margin: 18px 0px;
+  font-size: 1rem;
+}
+
+/* line 86, app/assets/stylesheets/pages/_products_index.scss */
+.listings--load-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* line 89, app/assets/stylesheets/pages/_products_index.scss */
+.listings--load-more-text {
+  font-size: 14px;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  font-size: 14px;
+  color: #2d2d2d;
+  border: 2px solid #ddd;
+  padding: 15px 80px 15px 80px;
+  margin: 0px 16px 20px 16px;
+}
+
+/* line 99, app/assets/stylesheets/pages/_products_index.scss */
+.listings--load-more-text:hover {
+  cursor: pointer;
+}
+
+/* line 5, app/assets/stylesheets/pages/_orders_show.scss */
+.padding {
+  background: #eee;
+  height: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* line 11, app/assets/stylesheets/pages/_orders_show.scss */
+.order {
+  height: 100%;
+}
+
+/* line 20, app/assets/stylesheets/pages/_orders_show.scss */
+.order--container {
+  background-color: #eee;
+  min-height: 390px;
+  min-width: 800px;
+  width: 100%;
+  height: 100%;
+  color: #2d2d2d;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  overflow: auto;
+}
+
+/* line 32, app/assets/stylesheets/pages/_orders_show.scss */
+.order--wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+}
+
+/* line 39, app/assets/stylesheets/pages/_orders_show.scss */
+.order--main {
+  list-style: none;
+  padding: 0px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-top: 8px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* line 50, app/assets/stylesheets/pages/_orders_show.scss */
+.order--listings--wrapper {
+  width: 90%;
+  margin: 20px;
+}
+
+/* line 55, app/assets/stylesheets/pages/_orders_show.scss */
+.order--listings--header {
+  text-align: left;
+  align-items: left;
+  padding: 0px;
+  margin: 20px 10px;
+  font-size: 14px;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  font-size: 1.15em;
+  font-style: normal;
+  letter-spacing: 2.5px;
+  line-height: 2em;
+  font-family: futura-pt-n7,futura-pt,"Futura PT","Futura Book",Tahoma,Geneva,Verdana,Arial,sans-serif;
+}
+
+/* line 68, app/assets/stylesheets/pages/_orders_show.scss */
+.order--listings {
+  padding: 0px;
+  margin: 0px 10px;
+  border-top: 1px solid #eee;
+}
+
+/* line 74, app/assets/stylesheets/pages/_orders_show.scss */
+.order--listings--subtotal {
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* line 79, app/assets/stylesheets/pages/_orders_show.scss */
+.order--listings--subtotal--price {
+  margin-left: 44px;
+}
+
+/* line 83, app/assets/stylesheets/pages/_orders_show.scss */
+.listing--item--wrapper {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* line 89, app/assets/stylesheets/pages/_orders_show.scss */
+.listing--item--photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px;
+  width: 110px;
+  height: 140px;
+}
+
+/* line 96, app/assets/stylesheets/pages/_orders_show.scss */
+.listing--item--img {
+  width: 110px;
+  height: 140px;
+}
+
+/* line 101, app/assets/stylesheets/pages/_orders_show.scss */
+.listing--details--wrapper {
+  width: 60%;
+  margin: 20px;
+}
+
+/* line 106, app/assets/stylesheets/pages/_orders_show.scss */
+.listing--details {
+  padding: 0px;
+}
+
+/* line 110, app/assets/stylesheets/pages/_orders_show.scss */
+.listing--details--header {
+  text-align: left;
+  padding: 0px;
+  color: #2d2d2d;
+  font-family: futura-pt-n7,futura-pt,"Futura PT","Futura Book",Tahoma,Geneva,Verdana,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: .85em;
+  padding-right: .3em;
+}
+
+/* line 121, app/assets/stylesheets/pages/_orders_show.scss */
+.listing--details--brand {
+  text-align: left;
+  padding: 5px 0px 5px 0px;
+}
+
+/* line 126, app/assets/stylesheets/pages/_orders_show.scss */
+.listing--title {
+  text-align: left;
+  padding: 5px 0px 5px 0px;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 135, app/assets/stylesheets/pages/_orders_show.scss */
+.listing--details--specs--wrapper {
+  text-align: left;
+  padding: 5px 0px 5px 0px;
+  list-style: none;
+  max-width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* line 143, app/assets/stylesheets/pages/_orders_show.scss */
+.listing--details--specs--wrapper li {
+  padding-right: 15px;
+}
+
+/* line 148, app/assets/stylesheets/pages/_orders_show.scss */
+.listing--remove--btn {
+  margin: 20px 10px;
+  padding: 0px;
+}
