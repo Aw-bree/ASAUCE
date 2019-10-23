@@ -3,7 +3,7 @@ import { withRouter } from 'react-router';
 import { selectCurrentFilters } from '../selectors/filters';
 import { requestProducts } from '../actions/product_actions';
 import { requestAttributes } from '../actions/attribute_actions';
-import ProductsIndex from './ProductIndex';
+import ProductIndex from './ProductIndex';
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -18,4 +18,4 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ProductsIndex));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ProductIndex));

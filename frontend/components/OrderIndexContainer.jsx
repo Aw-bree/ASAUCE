@@ -1,7 +1,5 @@
 import { connect } from 'react-redux';
-
 import OrderIndex from './OrderIndex';
-
 import { fetchOrder } from '../actions/order_actions';
 import { updateProductItem } from '../actions/product_item_actions';
 import { deleteOrderItem } from '../actions/order_item_actions';

@@ -1,6 +1,13 @@
 import React from 'react';
 
-export default class ProductFilterList extends React.Component {
+class ProductFilterList extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.getNewFilters = this.getNewFilters.bind(this);
+    this.getFilterItemCount = this.getFilterItemCount.bind(this);
+    this.passesFilters = this.passesFilters.bind(this);
+  }
 
   getNewFilters(filter, filterType) {
     let newFilters = JSON.parse(JSON.stringify(this.props.filters));
@@ -127,6 +134,6 @@ export default class ProductFilterList extends React.Component {
       </section>
     )
   }
-
-
 }
+
+export default ProductFilterList;
