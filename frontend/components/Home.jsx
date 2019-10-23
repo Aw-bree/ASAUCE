@@ -4,8 +4,9 @@ import HomeFeedCarousel from './HomeFeedCarousel';
 import React from 'react';
 import HomeFeatureSeasonal from './HomeFeatureSeasonal';
 import HomeCategoryCarousel from './HomeCategoryCarousel';
+import { withRouter } from 'react-router-dom';
 
-export default class Home extends React.Component {
+class Home extends React.Component {
   constructor(props) {
     super(props);
 
@@ -34,3 +35,5 @@ export default class Home extends React.Component {
     return this.state.isLoading ? null : homeElements
   }
 };
+
+export default withRouter(Home);
