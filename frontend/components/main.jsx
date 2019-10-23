@@ -13,7 +13,7 @@ export default (state) => (
     <Route path="/" component={NavContainer} />
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route exact path={"/products/search/"} component={ProductsIndexContainer} />
+      <Route exact path={"/products/search"} component={ProductsIndexContainer} />
       <Route exact path={"/products"} component={ProductsIndexContainer} />
       <Route exact path={"/products/:productId"} component={ProductShowContainer} />
       <Route exact path={"/orders/:orderId"} component={OrdersShowContainer} />
