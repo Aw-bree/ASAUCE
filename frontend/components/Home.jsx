@@ -2,6 +2,7 @@ import React from 'react';
 import HomeBanner from './HomeBanner';
 import HomeFeature from './HomeFeature';
 import HomeFeedCarousel from './HomeFeedCarousel';
+import React from 'react';
 import HomeFeatureSeasonal from './HomeFeatureSeasonal';
 import HomeCategoryCarousel from './HomeCategoryCarousel';
 
