@@ -48,6 +48,9 @@ export const selectOrderProductItemId = (product_items, size) => {
 }
 
 export const selectOrderItemListings = (orderItems, products, productItems) => {
+  if (!products[Object.keys(products)[0]].brand) {
+    return [];
+  }
   let array = Object.entries(orderItems)
   let result = [];
   if (array.length > 0) {
