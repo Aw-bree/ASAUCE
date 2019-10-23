@@ -1,4 +1,5 @@
 var path = require('path');
+var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 
 module.exports = {
   entry: "./frontend/asauce.jsx",
@@ -23,6 +24,7 @@ module.exports = {
   devtool: 'inline-source-map',
   resolve: {
     extensions: ['.js', '.jsx', '*']
-  }
+  },
+  plugins: [new CaseSensitivePathsPlugin()]
 };
 

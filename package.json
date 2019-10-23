@@ -37,6 +37,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "case-sensitive-paths-webpack-plugin": "^2.2.0",
     "webpack-cli": "^3.3.9"
   },
   "engines": {

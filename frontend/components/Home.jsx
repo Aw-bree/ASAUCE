@@ -1,4 +1,3 @@
-import React from 'react';
 import HomeBanner from './HomeBanner';
 import HomeFeature from './HomeFeature';
 import HomeFeedCarousel from './HomeFeedCarousel';
@@ -16,15 +15,12 @@ export default class Home extends React.Component {
   }
 
   componentDidMount() {
-    debugger
     this.setState({
       isLoading: false
     })
   }
 
   render() {
-    debugger
-
     const homeElements = (
       <div className="home">
         <HomeBanner />
