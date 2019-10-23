@@ -67,14 +67,16 @@
   font-weight: 900;
   color: white;
   padding: 24px 24px;
-  border-left: 1px solid $grey-2;
   width: 65px;
   border-style: border-box;
 }
 
 .toolbar--business--item-women {
   background-color: #525050;
+  border-left: 1px solid $grey-2;
+  border-right: 1px solid $grey-2;
 }
+
 
 .toolbar--business--logo {
   @include flex-item-perf-center;
