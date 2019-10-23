@@ -19,6 +19,14 @@
     .home--double-feature--item {
       width: 100%;
     }
+
+    .home--double--feature {
+      margin: 4% 1% 4% 1%;
+    }
+    
+    .home--double-feature--item {
+      margin: 0px 2% 0px 2%;
+    }
     
     .home--style-feed-carousel--item,
     .home--category-carousel--list--item {
@@ -82,7 +90,7 @@
     .home--double-feature,
     .home--feature ul {
 			grid-column: 1/3;
-		}
+    }
 	}
 }
 
@@ -114,11 +122,12 @@
 }
 
 .home--feature--buttons {
-  position: relative;
-  top: -25%;
-  left: 43%;
+  position: absolute;
+  top: 12%;
+  left: 39%;
   display: flex;
   flex-direction: column;
+  z-index: 99;
 
   a {
     justify-content: center;

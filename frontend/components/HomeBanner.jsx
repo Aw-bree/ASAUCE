@@ -13,7 +13,7 @@ export default () => (
 
 
     <a href="">
-      <img className="home--banner-img" alt="" src="https://66.media.tumblr.com/406d7ef67095e7c0f71ec731d99b220c/tumblr_pqt6uwiL6G1wyb2l8o1_1280.gif"></img>
+      <img width="600px" className="home--banner-img" alt="" src="https://66.media.tumblr.com/406d7ef67095e7c0f71ec731d99b220c/tumblr_pqt6uwiL6G1wyb2l8o1_1280.gif"></img>
     </a>
   </div>
 )
