@@ -55,7 +55,8 @@
   padding-left: 0px;
 }
 
-.toolbar--busienss--item {
+.toolbar--business--item,
+.toolbar--business--item-women {
   @include flex-item-perf-center;
   line-height: 99%;
   font-size: .875rem;
@@ -69,6 +70,10 @@
   border-left: 1px solid $grey-2;
   width: 65px;
   border-style: border-box;
+}
+
+.toolbar--business--item-women {
+  background-color: #525050;
 }
 
 .toolbar--business--logo {
@@ -305,6 +310,15 @@
   @include text-body;
   font-size: 12px;
   letter-spacing: 1px;
+}
+
+.category-bar--option:hover, .category-bar--feature:hover {
+  background: #eee;
+  color: #2d2d2d;
+}
+
+.category-bar--feature:hover p {
+  color: #2d2d2d;
 }
 
 .category-bar--feature {
